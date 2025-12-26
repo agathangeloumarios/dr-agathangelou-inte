@@ -346,7 +346,7 @@ export default function Procedures() {
                   <Link to={`/procedure/${procedure.id}`}>
                     <Button 
                       variant="ghost" 
-                      className="w-full group/btn text-primary hover:text-primary hover:bg-primary/10 font-semibold"
+                      className="w-full group/btn text-primary hover:text-[#a855f7] hover:bg-[#a855f7]/10 font-semibold transition-colors duration-300"
                     >
                       Learn More
                       <ArrowRight 

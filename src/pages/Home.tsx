@@ -3,6 +3,7 @@ import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pu
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import PhotoUploadBanner from '@/components/PhotoUploadBanner';
 
 export default function Home() {
   const procedures = [
@@ -127,6 +128,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <PhotoUploadBanner />
       <section className="relative pt-32 pb-24 px-4 overflow-hidden bg-gradient-to-br from-background via-white to-primary/5">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />

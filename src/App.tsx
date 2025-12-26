@@ -7,6 +7,7 @@ import ProcedureDetail from './pages/ProcedureDetail';
 import Benefits from './pages/Benefits';
 import Testimonials from './pages/Testimonials';
 import BookAppointment from './pages/BookAppointment';
+import PhotoUploadHelper from './pages/PhotoUploadHelper';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/book-appointment" element={<BookAppointment />} />
+          <Route path="/photo-upload-helper" element={<PhotoUploadHelper />} />
         </Routes>
       </div>
     </Router>

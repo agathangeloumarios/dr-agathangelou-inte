@@ -9,7 +9,8 @@ import drPhoto1 from '@/assets/images/dr_Agathangelou.jpg';
 import drPhoto2 from '@/assets/images/dr_agathangelou_1.png';
 import drPhoto3 from '@/assets/images/dr_agathangelou_2.jpeg';
 import drPhotoClarivein from '@/assets/images/dr_agathangelou_clarivein.jpg';
-import performingProcedure from '@/assets/images/Performing_procedures_3.JPG';
+import performingProcedure1 from '@/assets/images/Performing_procedures_1.jpg';
+import performingProcedure3 from '@/assets/images/Performing_procedures_3.jpg';
 
 export default function Team() {
   const credentials = [
@@ -175,7 +176,7 @@ export default function Team() {
           <PhotoGallery 
             photos={[
               { src: drPhoto1, alt: 'Dr. Agathangelou performing procedure', title: 'Advanced Interventional Procedure' },
-              { src: performingProcedure, alt: 'Dr. Marios performing procedures', title: 'Precision Medical Care' },
+              { src: performingProcedure3, alt: 'Dr. Marios performing procedures', title: 'Precision Medical Care' },
               { src: drPhotoClarivein, alt: 'Clarivein procedure', title: 'Clarivein Vein Treatment' }
             ]}
             columns={3}

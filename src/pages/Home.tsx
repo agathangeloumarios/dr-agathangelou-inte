@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PhotoGallery from '@/components/PhotoGallery';
-import drPhoto from '@/assets/images/dr_Agathangelou.jpg';
+import drPhoto from '@/assets/images/dr_agathangelou_2.jpeg';
 import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
 import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
 import operatingTheater3 from '@/assets/images/modern_operation_theater_3.jpeg';

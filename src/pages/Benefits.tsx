@@ -3,6 +3,10 @@ import { Pulse, Clock, Heart, Shield, Sparkle, TrendUp, CheckCircle, ArrowRight 
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import PhotoGallery from '@/components/PhotoGallery';
+import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
+import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
+import operatingTheater3 from '@/assets/images/modern_operation_theater_3.jpeg';
 
 export default function Benefits() {
   const benefits = [
@@ -156,6 +160,30 @@ export default function Benefits() {
               </div>
             </div>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+              Modern Medical Facilities
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              State-of-the-art equipment and comfortable treatment environments
+            </p>
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
+          </div>
+          
+          <PhotoGallery 
+            photos={[
+              { src: operatingTheater1, alt: 'Modern operation theater', title: 'Advanced Operating Theater' },
+              { src: operatingTheater2, alt: 'State-of-the-art equipment', title: 'Cutting-Edge Technology' },
+              { src: operatingTheater3, alt: 'Interventional suite', title: 'Patient-Centered Care Environment' }
+            ]}
+            columns={3}
+            aspectRatio="landscape"
+          />
         </div>
       </section>
 

@@ -3,6 +3,12 @@ import { ArrowRight, Pulse, Heart, Shield, TrendUp, Sparkle, CheckCircle } from 
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import PhotoGallery from '@/components/PhotoGallery';
+import performingProcedure1 from '@/assets/images/Performing_procedures_1.jpg';
+import performingProcedure2 from '@/assets/images/Performing_procedures_2.jpg';
+import medicalImaging1 from '@/assets/images/Pelvis-Iliac11_3_fps.jpg';
+import medicalImaging2 from '@/assets/images/Pelvis-Iliac5_3_fps.jpg';
+import medicalImaging3 from '@/assets/images/gr1_lrg-1.jpeg';
 
 export default function Procedures() {
   const procedures = [
@@ -175,6 +181,32 @@ export default function Procedures() {
       </section>
 
       <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+              Advanced Medical Imaging
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              State-of-the-art diagnostic imaging and image-guided procedures
+            </p>
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
+          </div>
+          
+          <PhotoGallery 
+            photos={[
+              { src: performingProcedure1, alt: 'Image-guided procedure', title: 'Precision Intervention' },
+              { src: performingProcedure2, alt: 'Advanced medical procedure', title: 'Minimally Invasive Techniques' },
+              { src: medicalImaging1, alt: 'Vascular imaging', title: 'Detailed Vascular Imaging' },
+              { src: medicalImaging2, alt: 'Diagnostic imaging', title: 'Advanced Diagnostics' },
+              { src: medicalImaging3, alt: 'Medical scan', title: 'High-Resolution Imaging' }
+            ]}
+            columns={3}
+            aspectRatio="landscape"
+          />
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-5xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Ready to Learn More?

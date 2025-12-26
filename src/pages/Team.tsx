@@ -4,6 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import PhotoGallery from '@/components/PhotoGallery';
+import drPhoto1 from '@/assets/images/dr_Agathangelou.jpg';
+import drPhoto2 from '@/assets/images/dr_agathangelou_1.png';
+import drPhoto3 from '@/assets/images/dr_agathangelou_2.jpeg';
+import drPhotoClarivein from '@/assets/images/dr_agathangelou_clarivein.jpg';
 
 export default function Team() {
   const credentials = [
@@ -61,13 +66,13 @@ export default function Team() {
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-2">
               <Card className="overflow-hidden border-2 border-primary/20 shadow-xl">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10 flex items-center justify-center relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent" />
-                  <div className="relative">
-                    <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 flex items-center justify-center">
-                      <div className="text-9xl">👨‍⚕️</div>
-                    </div>
-                  </div>
+                <div className="aspect-square bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10 overflow-hidden relative">
+                  <img 
+                    src={drPhoto1} 
+                    alt="Dr. Agathangelou Marios" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
                 
                 <div className="p-8 bg-gradient-to-br from-white to-muted/20">
@@ -157,6 +162,28 @@ export default function Team() {
       </section>
 
       <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">Professional Gallery</h3>
+            <p className="text-lg text-muted-foreground">
+              Dr. Marios in practice, performing advanced interventional procedures
+            </p>
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
+          </div>
+          
+          <PhotoGallery 
+            photos={[
+              { src: drPhoto2, alt: 'Dr. Agathangelou performing procedure', title: 'Advanced Interventional Procedure' },
+              { src: drPhoto3, alt: 'Dr. Marios with medical team', title: 'Collaborative Patient Care' },
+              { src: drPhotoClarivein, alt: 'Clarivein procedure', title: 'Clarivein Vein Treatment' }
+            ]}
+            columns={3}
+            aspectRatio="landscape"
+          />
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Medical Philosophy</h3>

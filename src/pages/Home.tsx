@@ -3,7 +3,15 @@ import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pu
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import PhotoUploadBanner from '@/components/PhotoUploadBanner';
+import PhotoGallery from '@/components/PhotoGallery';
+import drPhoto from '@/assets/images/dr_Agathangelou.jpg';
+import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
+import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
+import operatingTheater3 from '@/assets/images/modern_operation_theater_3.jpeg';
+import performingProcedure1 from '@/assets/images/Performing_procedures_1.jpg';
+import performingProcedure2 from '@/assets/images/Performing_procedures_2.jpg';
+import medicalImaging1 from '@/assets/images/Pelvis-Iliac11_3_fps.jpg';
+import medicalImaging2 from '@/assets/images/Pelvis-Iliac5_3_fps.jpg';
 
 export default function Home() {
   const procedures = [
@@ -128,7 +136,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <PhotoUploadBanner />
       <section className="relative pt-32 pb-24 px-4 overflow-hidden bg-gradient-to-br from-background via-white to-primary/5">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
@@ -225,18 +232,25 @@ export default function Home() {
               </div>
             </div>
             
-            <Card className="relative overflow-hidden border-2 border-primary/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-purple/10" />
-              <div className="relative p-12 h-96 flex flex-col items-center justify-center text-center">
-                <div className="w-24 h-24 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 transform rotate-6">
-                  <Pulse size={56} weight="duotone" className="text-primary" />
+            <Card className="relative overflow-hidden border-2 border-primary/10 shadow-xl">
+              <div className="relative h-96 overflow-hidden">
+                <img 
+                  src={drPhoto} 
+                  alt="Dr. Agathangelou Marios - Interventional Radiologist" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
+                    <Pulse size={40} weight="duotone" className="text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">
+                    Image-Guided Precision Care
+                  </h3>
+                  <p className="text-white/90">
+                    Advanced technology meets medical expertise for optimal patient outcomes
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">
-                  Image-Guided Precision Care
-                </h3>
-                <p className="text-muted-foreground">
-                  Advanced technology meets medical expertise for optimal patient outcomes
-                </p>
               </div>
             </Card>
           </div>
@@ -362,6 +376,33 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 bg-gradient-to-br from-background to-muted/20">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              Our Facilities & Technology
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              State-of-the-art equipment and modern facilities for precision medical care
+            </p>
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
+          </div>
+          
+          <PhotoGallery 
+            photos={[
+              { src: operatingTheater1, alt: 'Modern operation theater', title: 'Advanced Operating Theater' },
+              { src: operatingTheater2, alt: 'Medical equipment', title: 'State-of-the-Art Equipment' },
+              { src: operatingTheater3, alt: 'Interventional suite', title: 'Interventional Radiology Suite' },
+              { src: performingProcedure1, alt: 'Performing procedure', title: 'Image-Guided Procedures' },
+              { src: performingProcedure2, alt: 'Medical procedure', title: 'Precision Treatment' },
+              { src: medicalImaging1, alt: 'Vascular imaging', title: 'Diagnostic Imaging' }
+            ]}
+            columns={3}
+            aspectRatio="landscape"
+          />
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import performingProcedure from '@/assets/images/Performing_procedures_1.jpg';
 
 export default function ProcedureDetail() {
   const { id } = useParams();
@@ -277,6 +278,25 @@ export default function ProcedureDetail() {
 
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-5xl">
+          <Card className="overflow-hidden border-2 border-primary/10 shadow-xl mb-12">
+            <div className="relative h-80 overflow-hidden">
+              <img 
+                src={performingProcedure} 
+                alt="Advanced interventional procedure" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <h3 className="text-2xl font-bold mb-2">
+                  Image-Guided Precision
+                </h3>
+                <p className="text-white/90 text-lg">
+                  State-of-the-art equipment for minimally invasive procedures
+                </p>
+              </div>
+            </div>
+          </Card>
+          
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="p-6 border-2 border-border">
               <div className="flex items-center gap-3 mb-2">

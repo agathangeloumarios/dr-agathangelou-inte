@@ -6,166 +6,188 @@ import { Badge } from '@/components/ui/badge';
 
 const UterusIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 10C19 10 18 10.5 17.5 11.5C17 12 16.5 13 16.5 14.5V17C16.5 17 16 17 15.5 17.5C14.5 18 13 18.5 11.5 19.5C10.5 20.5 10 21.5 10 23C10 24.5 10.5 25.5 11.5 26.5C13 27.5 14.5 28 15.5 28.5C16 29 16.5 29 16.5 29V31.5C16.5 33 17 34 17.5 34.5C18 35.5 19 36 20 36C21 36 22 35.5 22.5 34.5C23 34 23.5 33 23.5 31.5V29C23.5 29 24 29 24.5 28.5C25.5 28 27 27.5 28.5 26.5C29.5 25.5 30 24.5 30 23C30 21.5 29.5 20.5 28.5 19.5C27 18.5 25.5 18 24.5 17.5C24 17 23.5 17 23.5 17V14.5C23.5 13 23 12 22.5 11.5C22 10.5 21 10 20 10Z" 
+    <path d="M20 12C18.5 12 17.5 12.5 17 13.5C16.5 14 16 15 16 16.5V18.5" 
+          stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M20 12C21.5 12 22.5 12.5 23 13.5C23.5 14 24 15 24 16.5V18.5" 
+          stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M16 18.5C15 19 13.5 19.5 12 21C10.5 22.5 10 24 10 25.5C10 27 10.5 28 11.5 28.5C12.5 29 13.5 28.5 14 28C14.5 27.5 15 26.5 15 25V21C15 19.5 15.5 19 16 18.5Z" 
+          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M24 18.5C25 19 26.5 19.5 28 21C29.5 22.5 30 24 30 25.5C30 27 29.5 28 28.5 28.5C27.5 29 26.5 28.5 26 28C25.5 27.5 25 26.5 25 25V21C25 19.5 24.5 19 24 18.5Z" 
+          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M16 18.5C16 20 16.5 21.5 17.5 22.5C18.5 23.5 19.5 24 20 24C20.5 24 21.5 23.5 22.5 22.5C23.5 21.5 24 20 24 18.5" 
           fill="currentColor" fillOpacity="0.15"/>
-    <path d="M20 36C19 36 18 35.5 17.5 34.5C17 34 16.5 33 16.5 31.5V29M20 36C21 36 22 35.5 22.5 34.5C23 34 23.5 33 23.5 31.5V29M20 36V38" 
-          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M16.5 29C16.5 29 16 29 15.5 28.5C14.5 28 13 27.5 11.5 26.5C10.5 25.5 10 24.5 10 23C10 21.5 10.5 20.5 11.5 19.5C13 18.5 14.5 18 15.5 17.5C16 17 16.5 17 16.5 17M23.5 29C23.5 29 24 29 24.5 28.5C25.5 28 27 27.5 28.5 26.5C29.5 25.5 30 24.5 30 23C30 21.5 29.5 20.5 28.5 19.5C27 18.5 25.5 18 24.5 17.5C24 17 23.5 17 23.5 17" 
-          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M16.5 17V14.5C16.5 13 17 12 17.5 11.5C18 10.5 19 10 20 10C21 10 22 10.5 22.5 11.5C23 12 23.5 13 23.5 14.5V17M20 10V6" 
-          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <circle cx="11.5" cy="23" r="1" fill="currentColor" opacity="0.4"/>
-    <circle cx="28.5" cy="23" r="1" fill="currentColor" opacity="0.4"/>
-    <path d="M18 19C18 19 18.5 20 19 20.5C19.5 21 20.5 21 21 20.5C21.5 20 22 19 22 19" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.5"/>
+    <path d="M16 18.5C16 20 16.5 21.5 17.5 22.5C18.5 23.5 19.5 24 20 24C20.5 24 21.5 23.5 22.5 22.5C23.5 21.5 24 20 24 18.5M20 24V32" 
+          stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+    <ellipse cx="12" cy="24.5" rx="1.2" ry="1.5" fill="currentColor" opacity="0.35"/>
+    <ellipse cx="28" cy="24.5" rx="1.2" ry="1.5" fill="currentColor" opacity="0.35"/>
+    <path d="M17.5 20C17.5 20 18.5 21 19.5 21C20.5 21 21.5 20 21.5 20" 
+          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
+    <circle cx="20" cy="10" r="1.5" stroke="currentColor" strokeWidth="1" opacity="0.3"/>
   </svg>
 );
 
 const VeinsIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6C17.5 6 16 7 15 8.5C14.5 9.5 14 11 14 13V27C14 29 14.5 30.5 15 31.5C16 33 17.5 34 20 34C22.5 34 24 33 25 31.5C25.5 30.5 26 29 26 27V13C26 11 25.5 9.5 25 8.5C24 7 22.5 6 20 6Z" 
-          fill="currentColor" fillOpacity="0.12"/>
-    <path d="M20 6C17.5 6 16 7 15 8.5C14.5 9.5 14 11 14 13V27C14 29 14.5 30.5 15 31.5C16 33 17.5 34 20 34C22.5 34 24 33 25 31.5C25.5 30.5 26 29 26 27V13C26 11 25.5 9.5 25 8.5C24 7 22.5 6 20 6Z" 
-          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M11 12C11 12 12 13 13 13.5C13.5 14 14 14 14 14M11 20C11 20 12 21 13 21.5C13.5 22 14 22 14 22M11 28C11 28 12 29 13 29.5C13.5 30 14 30 14 30" 
-          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.5"/>
-    <path d="M29 12C29 12 28 13 27 13.5C26.5 14 26 14 26 14M29 20C29 20 28 21 27 21.5C26.5 22 26 22 26 22M29 28C29 28 28 29 27 29.5C26.5 30 26 30 26 30" 
-          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.5"/>
-    <ellipse cx="20" cy="13" rx="2.5" ry="1.5" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="20" cy="20" rx="3" ry="1.8" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="20" cy="27" rx="2.5" ry="1.5" fill="currentColor" opacity="0.25"/>
-    <path d="M17.5 16C17.5 16 18.5 17 19 17.5C19.5 18 20.5 18 21 17.5C21.5 17 22.5 16 22.5 16M17.5 24C17.5 24 18.5 25 19 25.5C19.5 26 20.5 26 21 25.5C21.5 25 22.5 24 22.5 24" 
-          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
+    <path d="M18 8C17 9 16.5 10.5 16.5 12.5V15C16.5 15 16 15.5 15.5 16C15 16.5 14 17.5 13.5 18.5C13 19.5 12.5 20.5 12.5 21.5C12.5 22.5 13 23.5 13.5 24.5C14 25.5 15 26.5 15.5 27C16 27.5 16.5 28 16.5 28V30.5C16.5 32 17 33 18 34" 
+          stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M22 8C23 9 23.5 10.5 23.5 12.5V15C23.5 15 24 15.5 24.5 16C25 16.5 26 17.5 26.5 18.5C27 19.5 27.5 20.5 27.5 21.5C27.5 22.5 27 23.5 26.5 24.5C26 25.5 25 26.5 24.5 27C24 27.5 23.5 28 23.5 28V30.5C23.5 32 23 33 22 34" 
+          stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M18 8C18.5 7.5 19 7 20 7C21 7 21.5 7.5 22 8M18 34C18.5 34.5 19 35 20 35C21 35 21.5 34.5 22 34" 
+          stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M16.5 12.5C16.5 13.5 17 14.5 18 15C19 15.5 21 15.5 22 15C23 14.5 23.5 13.5 23.5 12.5M16.5 30.5C16.5 29.5 17 28.5 18 28C19 27.5 21 27.5 22 28C23 28.5 23.5 29.5 23.5 30.5" 
+          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" opacity="0.4"/>
+    <path d="M13 19C13.5 18.5 14.5 18 15.5 18C16.5 18 17 18.5 17 19C17 19.5 16.5 20 15.5 20C14.5 20 13.5 19.5 13 19Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.1"/>
+    <path d="M27 19C26.5 18.5 25.5 18 24.5 18C23.5 18 23 18.5 23 19C23 19.5 23.5 20 24.5 20C25.5 20 26.5 19.5 27 19Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.1"/>
+    <path d="M13 24C13.5 23.5 14.5 23 15.5 23C16.5 23 17 23.5 17 24C17 24.5 16.5 25 15.5 25C14.5 25 13.5 24.5 13 24Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.1"/>
+    <path d="M27 24C26.5 23.5 25.5 23 24.5 23C23.5 23 23 23.5 23 24C23 24.5 23.5 25 24.5 25C25.5 25 26.5 24.5 27 24Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.1"/>
+    <circle cx="20" cy="21" r="1.2" fill="currentColor" opacity="0.3"/>
   </svg>
 );
 
 const ProstateIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 28C24.5 28 28 24.5 28 20C28 15.5 24.5 12 20 12C15.5 12 12 15.5 12 20C12 24.5 15.5 28 20 28Z" 
-          fill="currentColor" fillOpacity="0.15"/>
-    <path d="M20 28C24.5 28 28 24.5 28 20C28 15.5 24.5 12 20 12C15.5 12 12 15.5 12 20C12 24.5 15.5 28 20 28Z" 
-          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M20 8V12M20 28V32" 
-          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
-    <ellipse cx="20" cy="10" rx="1.5" ry="2.5" fill="currentColor" opacity="0.2"/>
-    <ellipse cx="20" cy="30" rx="1.5" ry="2.5" fill="currentColor" opacity="0.2"/>
-    <circle cx="20" cy="20" r="3.5" stroke="currentColor" strokeWidth="1.2" opacity="0.4"/>
-    <path d="M16.5 16.5C16.5 16.5 17.5 15.5 18.5 15C19.5 14.5 20.5 14.5 21.5 15C22.5 15.5 23.5 16.5 23.5 16.5M16.5 23.5C16.5 23.5 17.5 24.5 18.5 25C19.5 25.5 20.5 25.5 21.5 25C22.5 24.5 23.5 23.5 23.5 23.5" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.35"/>
-    <path d="M14 17L16 18.5M26 17L24 18.5M14 23L16 21.5M26 23L24 21.5" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.3"/>
+    <path d="M20 10C18 10 17 10.5 16.5 11C16 11.5 16 12 16 12.5V15" 
+          stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M20 10C22 10 23 10.5 23.5 11C24 11.5 24 12 24 12.5V15" 
+          stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <path d="M16 15C14.5 15.5 13 16.5 12 18C11 19.5 10.5 21 10.5 22.5C10.5 24 11 25.5 12 26.5C13 27.5 14.5 28.5 16 29C17 29.5 18.5 30 20 30C21.5 30 23 29.5 24 29C25.5 28.5 27 27.5 28 26.5C29 25.5 29.5 24 29.5 22.5C29.5 21 29 19.5 28 18C27 16.5 25.5 15.5 24 15" 
+          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+    <ellipse cx="20" cy="22" rx="5.5" ry="5" fill="currentColor" fillOpacity="0.08"/>
+    <path d="M20 30V34" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+    <ellipse cx="20" cy="32" rx="1.5" ry="2" stroke="currentColor" strokeWidth="1.1" opacity="0.3"/>
+    <path d="M15.5 20C15.5 20 16.5 19 18 19C19.5 19 20 20 20 20M20 20C20 20 20.5 19 22 19C23.5 19 24.5 20 24.5 20" 
+          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.4"/>
+    <circle cx="17" cy="23" r="1" fill="currentColor" opacity="0.3"/>
+    <circle cx="23" cy="23" r="1" fill="currentColor" opacity="0.3"/>
+    <path d="M18 25.5C18 25.5 19 26.5 20 26.5C21 26.5 22 25.5 22 25.5" 
+          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.35"/>
   </svg>
 );
 
 const SpineIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6L20 34" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-    <ellipse cx="20" cy="8.5" rx="3.5" ry="2.5" fill="currentColor" fillOpacity="0.18"/>
-    <ellipse cx="20" cy="8.5" rx="3.5" ry="2.5" stroke="currentColor" strokeWidth="1.2"/>
-    <path d="M16.5 8.5L13 9M23.5 8.5L27 9" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
-    <ellipse cx="20" cy="14" rx="4.5" ry="3" fill="currentColor" fillOpacity="0.18"/>
-    <ellipse cx="20" cy="14" rx="4.5" ry="3" stroke="currentColor" strokeWidth="1.2"/>
-    <path d="M15.5 14L12 15M24.5 14L28 15" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
-    <ellipse cx="20" cy="20" rx="5" ry="3.5" fill="currentColor" fillOpacity="0.18"/>
-    <ellipse cx="20" cy="20" rx="5" ry="3.5" stroke="currentColor" strokeWidth="1.2"/>
-    <path d="M15 20L11 21M25 20L29 21" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
-    <ellipse cx="20" cy="26" rx="4.5" ry="3" fill="currentColor" fillOpacity="0.18"/>
-    <ellipse cx="20" cy="26" rx="4.5" ry="3" stroke="currentColor" strokeWidth="1.2"/>
-    <path d="M15.5 26L12 27M24.5 26L28 27" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
-    <ellipse cx="20" cy="31.5" rx="3.5" ry="2.5" fill="currentColor" fillOpacity="0.18"/>
-    <ellipse cx="20" cy="31.5" rx="3.5" ry="2.5" stroke="currentColor" strokeWidth="1.2"/>
-    <path d="M16.5 31.5L13 32M23.5 31.5L27 32" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4"/>
+    <path d="M20 7L20 33" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <ellipse cx="20" cy="9" rx="4" ry="2.5" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M16 9L12 10M24 9L28 10" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <ellipse cx="20" cy="14.5" rx="4.5" ry="3" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M15.5 14.5L11 16M24.5 14.5L29 16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <ellipse cx="20" cy="20.5" rx="5" ry="3.5" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M15 20.5L10 22M25 20.5L30 22" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <ellipse cx="20" cy="26.5" rx="4.5" ry="3" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M15.5 26.5L11 28M24.5 26.5L29 28" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <ellipse cx="20" cy="31.5" rx="4" ry="2.5" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M16 31.5L12 33M24 31.5L28 33" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <circle cx="20" cy="20.5" r="1.5" fill="currentColor" opacity="0.35"/>
+    <path d="M18.5 17.5C18.5 17.5 19 17 20 17C21 17 21.5 17.5 21.5 17.5M18.5 23.5C18.5 23.5 19 23 20 23C21 23 21.5 23.5 21.5 23.5" 
+          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.3"/>
   </svg>
 );
 
 const LungsIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 8V15.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-    <path d="M20 15.5C18.5 15.5 17 16.5 15.5 18C14 19.5 12.5 21.5 11.5 24C10.5 26.5 10 29 10 30.5C10 32 10.5 33 11.5 33.5C12.5 34 13.5 33.5 14 33C14.5 32.5 15 31.5 15 30V22.5C15 20.5 16 18.5 17.5 17.5C18.5 17 19.5 16.5 20 16.5" 
-          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M20 15.5C21.5 15.5 23 16.5 24.5 18C26 19.5 27.5 21.5 28.5 24C29.5 26.5 30 29 30 30.5C30 32 29.5 33 28.5 33.5C27.5 34 26.5 33.5 26 33C25.5 32.5 25 31.5 25 30V22.5C25 20.5 24 18.5 22.5 17.5C21.5 17 20.5 16.5 20 16.5" 
-          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M13 21C12.5 22 11.5 24 11.5 26.5M13 26.5C12.5 27.5 12 28.5 12 29.5" 
-          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.35"/>
-    <path d="M27 21C27.5 22 28.5 24 28.5 26.5M27 26.5C27.5 27.5 28 28.5 28 29.5" 
-          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.35"/>
-    <ellipse cx="15" cy="24" rx="1.5" ry="2" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="25" cy="24" rx="1.5" ry="2" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="14" cy="28.5" rx="1.2" ry="1.5" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="26" cy="28.5" rx="1.2" ry="1.5" fill="currentColor" opacity="0.25"/>
+    <path d="M20 8V14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+    <circle cx="20" cy="6.5" r="1.5" stroke="currentColor" strokeWidth="1.2" opacity="0.3"/>
+    <path d="M20 14C18 14 16.5 14.5 15.5 15.5C14.5 16.5 13.5 18 13 20C12.5 22 12 24 12 25.5C12 27 12 28 12.5 28.5C13 29.5 14 30 14.5 29.5C15 29 15.5 28 15.5 27V20.5C15.5 18.5 16.5 17 17.5 16C18.5 15.5 19 15 20 15" 
+          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M20 14C22 14 23.5 14.5 24.5 15.5C25.5 16.5 26.5 18 27 20C27.5 22 28 24 28 25.5C28 27 28 28 27.5 28.5C27 29.5 26 30 25.5 29.5C25 29 24.5 28 24.5 27V20.5C24.5 18.5 23.5 17 22.5 16C21.5 15.5 21 15 20 15" 
+          fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M13.5 19C13 20 12.5 21.5 12.5 23.5M13.5 25C13 26 12.5 27 12.5 28" 
+          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.35"/>
+    <path d="M26.5 19C27 20 27.5 21.5 27.5 23.5M26.5 25C27 26 27.5 27 27.5 28" 
+          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.35"/>
+    <path d="M15 18C15 18 15.5 17.5 16.5 17C17.5 16.5 18.5 16.5 19.5 17M25 18C25 18 24.5 17.5 23.5 17C22.5 16.5 21.5 16.5 20.5 17" 
+          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.3"/>
+    <ellipse cx="14.5" cy="22" rx="1.2" ry="2" fill="currentColor" opacity="0.25"/>
+    <ellipse cx="25.5" cy="22" rx="1.2" ry="2" fill="currentColor" opacity="0.25"/>
+    <ellipse cx="14" cy="26.5" rx="1" ry="1.5" fill="currentColor" opacity="0.25"/>
+    <ellipse cx="26" cy="26.5" rx="1" ry="1.5" fill="currentColor" opacity="0.25"/>
   </svg>
 );
 
 const KidneysIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.5 14C10 14 8.5 15 8 16.5C7.5 17.5 7.5 18.5 7.5 20V24C7.5 25.5 7.5 26.5 8 27.5C8.5 29 10 30 11.5 30C13 30 13.5 29.5 14 28.5C14.5 27.5 14.5 26.5 14.5 25V19C14.5 17.5 14.5 16.5 14 15.5C13.5 14.5 13 14 11.5 14Z" 
-          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
-    <path d="M28.5 14C30 14 31.5 15 32 16.5C32.5 17.5 32.5 18.5 32.5 20V24C32.5 25.5 32.5 26.5 32 27.5C31.5 29 30 30 28.5 30C27 30 26.5 29.5 26 28.5C25.5 27.5 25.5 26.5 25.5 25V19C25.5 17.5 25.5 16.5 26 15.5C26.5 14.5 27 14 28.5 14Z" 
-          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
-    <ellipse cx="11" cy="18.5" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="29" cy="18.5" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="11" cy="22" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="29" cy="22" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="11" cy="25.5" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="29" cy="25.5" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <path d="M14.5 20C15 20 16 20.5 17 21C18 21.5 19 22 20 22C21 22 22 21.5 23 21C24 20.5 25 20 25.5 20" 
-          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
-    <path d="M17 22C17.5 22.5 18.5 23 19 23.5C19.5 24 20.5 24 21 23.5C21.5 23 22.5 22.5 23 22" 
-          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <path d="M12 15C10.5 15 9.5 15.5 9 16.5C8.5 17.5 8 18.5 8 20V24C8 25.5 8.5 26.5 9 27.5C9.5 28.5 10.5 29 12 29C13 29 13.5 28.5 14 27.5C14.5 26.5 14.5 25.5 14.5 24V20C14.5 18.5 14.5 17.5 14 16.5C13.5 15.5 13 15 12 15Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+    <path d="M28 15C29.5 15 30.5 15.5 31 16.5C31.5 17.5 32 18.5 32 20V24C32 25.5 31.5 26.5 31 27.5C30.5 28.5 29.5 29 28 29C27 29 26.5 28.5 26 27.5C25.5 26.5 25.5 25.5 25.5 24V20C25.5 18.5 25.5 17.5 26 16.5C26.5 15.5 27 15 28 15Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+    <path d="M11 17.5C10.5 17.5 10 18 10 18.5C10 19 10.5 19.5 11 19.5C11.5 19.5 12 19 12 18.5C12 18 11.5 17.5 11 17.5Z" 
+          fill="currentColor" opacity="0.35"/>
+    <path d="M29 17.5C28.5 17.5 28 18 28 18.5C28 19 28.5 19.5 29 19.5C29.5 19.5 30 19 30 18.5C30 18 29.5 17.5 29 17.5Z" 
+          fill="currentColor" opacity="0.35"/>
+    <path d="M11 21C10.5 21 10 21.5 10 22C10 22.5 10.5 23 11 23C11.5 23 12 22.5 12 22C12 21.5 11.5 21 11 21Z" 
+          fill="currentColor" opacity="0.35"/>
+    <path d="M29 21C28.5 21 28 21.5 28 22C28 22.5 28.5 23 29 23C29.5 23 30 22.5 30 22C30 21.5 29.5 21 29 21Z" 
+          fill="currentColor" opacity="0.35"/>
+    <path d="M11 24.5C10.5 24.5 10 25 10 25.5C10 26 10.5 26.5 11 26.5C11.5 26.5 12 26 12 25.5C12 25 11.5 24.5 11 24.5Z" 
+          fill="currentColor" opacity="0.35"/>
+    <path d="M29 24.5C28.5 24.5 28 25 28 25.5C28 26 28.5 26.5 29 26.5C29.5 26.5 30 26 30 25.5C30 25 29.5 24.5 29 24.5Z" 
+          fill="currentColor" opacity="0.35"/>
+    <path d="M14.5 20C15.5 20 17 20.5 18.5 21C19.5 21.5 20.5 21.5 21.5 21C23 20.5 24.5 20 25.5 20M14.5 23C15.5 23 17 23.5 18.5 24C19.5 24.5 20.5 24.5 21.5 24C23 23.5 24.5 23 25.5 23" 
+          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.35"/>
+    <path d="M20 10V13M20 29V32" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" opacity="0.25"/>
   </svg>
 );
 
 const LiverIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9 18.5C9 16.5 9.5 15 11 14C12 13.5 13.5 13 15.5 13H21C23 13 24.5 13.5 25.5 13C26.5 12.5 28 11.5 29.5 10.5C30.5 10 31 10 31.5 10.5C32 11 32 11.5 32 12.5V24.5C32 26.5 31.5 27.5 30 28.5C29 29 27.5 29.5 25.5 29.5H14.5C12.5 29.5 11 29 10 28C9 27 8.5 25.5 9 23.5V18.5Z" 
-          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
-    <path d="M15.5 16.5V19.5M19.5 15V20M23.5 16V20.5M27 14.5V18.5" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.4"/>
-    <path d="M11 21C11 21 12 22 13.5 22.5C15 23 17 23 18.5 22.5C20 22 21 21 21 21M21 21C21 21 22 22 23.5 22.5C25 23 27 23 28.5 22.5C29.5 22 30 21.5 30 21" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.35"/>
-    <ellipse cx="14" cy="24" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="19" cy="25" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="24" cy="24.5" rx="1.5" ry="1" fill="currentColor" opacity="0.3"/>
-    <path d="M28 10.5C28.5 10 29.5 9.5 30 9.5C30.5 9.5 31 10 31 10.5" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.4"/>
+    <path d="M10 19C10 17 10.5 15.5 11.5 14.5C12.5 13.5 14 13 16 13H20.5C22.5 13 24 13.5 25 13C26 12.5 27.5 11.5 29 10.5C29.5 10 30 10 30.5 10.5C31 11 31 11.5 31 12.5V23.5C31 25.5 30.5 26.5 29.5 27.5C28.5 28.5 27 29 25 29H15C13 29 11.5 28.5 10.5 27.5C9.5 26.5 9.5 25 10 23V19Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+    <path d="M15.5 16.5V18.5M19 15.5V19.5M22.5 16V20M26 15V18.5" 
+          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <path d="M12 21C12 21 13 21.5 14.5 22C16 22.5 18 22.5 19.5 22C20.5 21.5 21 21 21 21M21 21C21 21 22 21.5 23.5 22C25 22.5 27 22.5 28.5 22C29 21.5 29.5 21 29.5 21" 
+          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.35"/>
+    <ellipse cx="14.5" cy="23.5" rx="1.2" ry="1" fill="currentColor" opacity="0.3"/>
+    <ellipse cx="19" cy="24.5" rx="1.2" ry="1" fill="currentColor" opacity="0.3"/>
+    <ellipse cx="24" cy="24" rx="1.2" ry="1" fill="currentColor" opacity="0.3"/>
+    <path d="M27.5 10.5C28 10 29 9.5 29.5 9.5C30 9.5 30.5 10 30.5 10.5" 
+          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
+    <circle cx="28.5" cy="10" r="1" fill="currentColor" opacity="0.25"/>
   </svg>
 );
 
 const HeartIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 12C18.5 10 16.5 9 14.5 9C11.5 9 9 11.5 9 14.5C9 16 9.5 17.5 10.5 19C11.5 20.5 13 22 14.5 23.5C16 25 17.5 26.5 18.5 28C19 28.5 19.5 29.5 20 30.5C20.5 29.5 21 28.5 21.5 28C22.5 26.5 24 25 25.5 23.5C27 22 28.5 20.5 29.5 19C30.5 17.5 31 16 31 14.5C31 11.5 28.5 9 25.5 9C23.5 9 21.5 10 20 12Z" 
-          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
-    <path d="M14 18C14 18 15 19 16.5 19.5C18 20 19 19.5 19.5 19M21 19C21.5 19.5 22.5 20 24 19.5C25.5 19 26.5 18 26.5 18" 
-          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.35"/>
-    <path d="M20 18V22M20 22H23M20 22H17" 
-          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
-    <path d="M16 14C16 14 16.5 13 17.5 12.5C18 12 19 12 19.5 12.5M24 14C24 14 23.5 13 22.5 12.5C22 12 21 12 20.5 12.5" 
+    <path d="M20 13C18.5 11 16.5 10 14.5 10C11.5 10 9.5 12 9.5 15C9.5 16.5 10 18 11 19.5C12 21 13.5 22.5 15 24C16.5 25.5 18 27 19 28.5C19.5 29 20 30 20 30.5C20 30 20.5 29 21 28.5C22 27 23.5 25.5 25 24C26.5 22.5 28 21 29 19.5C30 18 30.5 16.5 30.5 15C30.5 12 28.5 10 25.5 10C23.5 10 21.5 11 20 13Z" 
+          fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+    <path d="M14.5 17.5C14.5 17.5 15.5 18.5 17 19C18.5 19.5 19.5 19 19.5 19M20.5 19C20.5 19 21.5 19.5 23 19C24.5 18.5 25.5 17.5 25.5 17.5" 
+          stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.35"/>
+    <path d="M20 18V21M20 21H22.5M20 21H17.5" 
+          stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" opacity="0.4"/>
+    <path d="M16.5 14.5C16.5 14.5 17 13.5 18 13C18.5 12.5 19.5 12.5 20 13M24 14.5C24 14.5 23.5 13.5 22.5 13C22 12.5 21 12.5 20.5 13" 
           stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.3"/>
-    <ellipse cx="15" cy="15" rx="1" ry="1.5" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="25" cy="15" rx="1" ry="1.5" fill="currentColor" opacity="0.25"/>
+    <ellipse cx="15.5" cy="15.5" rx="1" ry="1.5" fill="currentColor" opacity="0.3"/>
+    <ellipse cx="24.5" cy="15.5" rx="1" ry="1.5" fill="currentColor" opacity="0.3"/>
+    <path d="M17 23.5C17 23.5 18 24.5 19 25C19.5 25.5 20.5 25.5 21 25C22 24.5 23 23.5 23 23.5" 
+          stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" opacity="0.3"/>
   </svg>
 );
 
 const ArteriesIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="20" cy="20" r="4.5" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.3"/>
-    <circle cx="20" cy="20" r="2" fill="currentColor" opacity="0.25"/>
-    <path d="M20 9V15.5M20 24.5V31" 
-          stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-    <path d="M9 20H15.5M24.5 20H31" 
-          stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-    <path d="M13.5 13.5L17 17M23 23L26.5 26.5" 
-          stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
-    <path d="M26.5 13.5L23 17M17 23L13.5 26.5" 
-          stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
-    <circle cx="20" cy="9" r="1.5" fill="currentColor" opacity="0.3"/>
-    <circle cx="20" cy="31" r="1.5" fill="currentColor" opacity="0.3"/>
-    <circle cx="9" cy="20" r="1.5" fill="currentColor" opacity="0.3"/>
-    <circle cx="31" cy="20" r="1.5" fill="currentColor" opacity="0.3"/>
-    <ellipse cx="13.5" cy="13.5" rx="1.2" ry="1.2" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="26.5" cy="13.5" rx="1.2" ry="1.2" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="13.5" cy="26.5" rx="1.2" ry="1.2" fill="currentColor" opacity="0.25"/>
-    <ellipse cx="26.5" cy="26.5" rx="1.2" ry="1.2" fill="currentColor" opacity="0.25"/>
+    <circle cx="20" cy="20" r="5" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="20" cy="20" r="2.5" fill="currentColor" opacity="0.25"/>
+    <path d="M20 10V15M20 25V30" 
+          stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M10 20H15M25 20H30" 
+          stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M14 14L16.5 16.5M23.5 23.5L26 26" 
+          stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" opacity="0.6"/>
+    <path d="M26 14L23.5 16.5M16.5 23.5L14 26" 
+          stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" opacity="0.6"/>
+    <circle cx="20" cy="10" r="1.5" fill="currentColor" opacity="0.35"/>
+    <circle cx="20" cy="30" r="1.5" fill="currentColor" opacity="0.35"/>
+    <circle cx="10" cy="20" r="1.5" fill="currentColor" opacity="0.35"/>
+    <circle cx="30" cy="20" r="1.5" fill="currentColor" opacity="0.35"/>
+    <circle cx="14" cy="14" r="1.2" fill="currentColor" opacity="0.3"/>
+    <circle cx="26" cy="14" r="1.2" fill="currentColor" opacity="0.3"/>
+    <circle cx="14" cy="26" r="1.2" fill="currentColor" opacity="0.3"/>
+    <circle cx="26" cy="26" r="1.2" fill="currentColor" opacity="0.3"/>
+    <path d="M18.5 18.5C18.5 18.5 19 18 20 18C21 18 21.5 18.5 21.5 18.5M18.5 21.5C18.5 21.5 19 22 20 22C21 22 21.5 21.5 21.5 21.5" 
+          stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.3"/>
   </svg>
 );
 

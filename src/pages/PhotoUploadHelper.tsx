@@ -1,7 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, UploadSimple, Image as ImageIcon, Folder, Info } from '@phosphor-icons/react';
-import { Button } from '@/components/ui/button';
 
 export default function PhotoUploadHelper() {
   const photoLocations = [

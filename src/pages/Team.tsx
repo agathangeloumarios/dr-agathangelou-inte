@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import PhotoGallery from '@/components/PhotoGallery';
+import Footer from '@/components/Footer';
 import drPhoto1 from '@/assets/images/dr_Agathangelou.jpg';
 import drPhoto2 from '@/assets/images/dr_agathangelou_1.png';
 import drPhoto3 from '@/assets/images/dr_agathangelou_2.jpeg';
@@ -229,6 +230,8 @@ export default function Team() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

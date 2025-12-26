@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pulse, Heart, Shield, Clock as ClockIcon, Sparkle } from '@phosphor-icons/react';
+import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pulse, Heart, Shield, Clock as ClockIcon, Sparkle, FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PhotoGallery from '@/components/PhotoGallery';
+import Footer from '@/components/Footer';
 import drPhoto from '@/assets/images/dr_agathangelou_2.jpeg';
 import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
 import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
@@ -299,7 +300,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <MapPin size={32} weight="duotone" className="text-primary" />
@@ -348,47 +349,44 @@ export default function Home() {
               </a>
             </Card>
           </div>
-        </div>
-      </section>
 
-      <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col items-center text-center space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L12 22M2 12L22 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-                  <circle cx="12" cy="12" r="3" fill="currentColor"/>
-                </svg>
-              </div>
-              <div className="flex flex-col items-start">
-                <span className="font-bold text-lg">Dr. Marios</span>
-                <span className="text-xs text-gray-400">Interventional Radiology</span>
-              </div>
-            </div>
-            
-            <p className="text-gray-300 max-w-md">
-              Providing precision medical care through minimally invasive techniques and advanced technology
-            </p>
-            
-            <div className="flex gap-4 pt-4">
-              <Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link>
-              <span className="text-gray-600">•</span>
-              <Link to="/team" className="text-gray-400 hover:text-white transition-colors">Team</Link>
-              <span className="text-gray-600">•</span>
-              <Link to="/procedures" className="text-gray-400 hover:text-white transition-colors">Procedures</Link>
-              <span className="text-gray-600">•</span>
-              <Link to="/book-appointment" className="text-gray-400 hover:text-white transition-colors">Book</Link>
-            </div>
-            
-            <div className="pt-8 border-t border-gray-700 w-full">
-              <p className="text-gray-400 text-sm">
-                © 2025 Dr. Agathangelou Marios. All rights reserved.
-              </p>
+          <div className="flex flex-col items-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Connect With Us</h3>
+            <p className="text-muted-foreground mb-6">Follow us on social media for updates and health tips</p>
+            <div className="flex gap-4">
+              <a 
+                href="https://www.facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-14 h-14 bg-primary/10 hover:bg-[#1877F2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                aria-label="Follow us on Facebook"
+              >
+                <FacebookLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
+              </a>
+              <a 
+                href="https://www.instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-14 h-14 bg-primary/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                aria-label="Follow us on Instagram"
+              >
+                <InstagramLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
+              </a>
+              <a 
+                href="https://www.linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-14 h-14 bg-primary/10 hover:bg-[#0A66C2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                aria-label="Follow us on LinkedIn"
+              >
+                <LinkedinLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
+              </a>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+      <Footer />
     </div>
   );
 }

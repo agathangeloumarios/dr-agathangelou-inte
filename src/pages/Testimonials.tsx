@@ -3,6 +3,7 @@ import { Star, Quotes, ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Footer from '@/components/Footer';
 
 export default function Testimonials() {
   const testimonials = [
@@ -201,6 +202,8 @@ export default function Testimonials() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

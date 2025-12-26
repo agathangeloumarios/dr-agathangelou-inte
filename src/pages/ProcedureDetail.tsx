@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import Footer from '@/components/Footer';
 import performingProcedure from '@/assets/images/Performing_procedures_1.jpg';
 
 export default function ProcedureDetail() {
@@ -394,6 +395,8 @@ export default function ProcedureDetail() {
           </Card>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

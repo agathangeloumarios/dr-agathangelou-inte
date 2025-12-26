@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PhotoGallery from '@/components/PhotoGallery';
+import Footer from '@/components/Footer';
 import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
 import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
 import operatingTheater3 from '@/assets/images/modern_operation_theater_3.jpeg';
@@ -211,6 +212,8 @@ export default function Benefits() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

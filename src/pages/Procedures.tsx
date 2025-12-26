@@ -3,6 +3,7 @@ import { ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Footer from '@/components/Footer';
 
 const UterusIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,6 +388,8 @@ export default function Procedures() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

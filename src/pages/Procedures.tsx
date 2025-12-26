@@ -318,8 +318,10 @@ export default function Procedures() {
                     {procedure.category}
                   </Badge>
                   
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform duration-300">
-                    {procedure.icon}
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-500 ease-out group-hover:from-accent/30 group-hover:to-primary/20">
+                    <div className="group-hover:animate-pulse">
+                      {procedure.icon}
+                    </div>
                   </div>
                   
                   <h2 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">

@@ -68,7 +68,7 @@ export default function Team() {
               <Card className="overflow-hidden border-2 border-primary/20 shadow-xl">
                 <div className="aspect-square bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10 overflow-hidden relative">
                   <img 
-                    src={drPhoto1} 
+                    src={drPhoto2} 
                     alt="Dr. Agathangelou Marios" 
                     className="w-full h-full object-cover"
                   />

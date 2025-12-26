@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { List, X } from '@phosphor-icons/react';
+import { Button } from '@/components/ui/button';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,49 +16,110 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMobileMenuOpen]);
+
   const navItems = [
     { name: 'HOME', path: '/' },
     { name: 'TEAM', path: '/team' },
     { name: 'PROCEDURES', path: '/procedures' },
     { name: 'BENEFITS', path: '/benefits' },
     { name: 'TESTIMONIALS', path: '/testimonials' },
-    { name: 'BOOK AN APPOINTMENT', path: '/book-appointment' },
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">M</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-lg text-gray-900">Dr. Marios</span>
-              <span className="text-xs text-muted">Interventional Radiology</span>
-            </div>
-          </Link>
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link key={item.path} to={item.path} className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === item.path ? 'text-primary' : 'text-gray-700'}`}>
-                {item.name}
+    <>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-border' 
+          : 'bg-white/80 backdrop-blur-sm'
+      }`}>
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex items-center justify-between h-20">
+            <Link to="/" className="flex items-center space-x-3 group">
+              <div className="relative w-11 h-11">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80 rounded-xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300" />
+                <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center">
+                  <svg className="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L12 22M2 12L22 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                    <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <span className="font-bold text-lg tracking-tight text-foreground">Dr. Marios</span>
+                <span className="text-xs text-muted-foreground font-medium">Interventional Radiology</span>
+              </div>
+            </Link>
+            
+            <div className="hidden lg:flex items-center space-x-1">
+              {navItems.map((item) => (
+                <Link 
+                  key={item.path} 
+                  to={item.path} 
+                  className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${
+                    location.pathname === item.path 
+                      ? 'text-primary bg-primary/10' 
+                      : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <Link to="/book-appointment">
+                <Button className="ml-4 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105">
+                  BOOK APPOINTMENT
+                </Button>
               </Link>
-            ))}
+            </div>
+            
+            <button 
+              className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
+            </button>
           </div>
-          <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
-        {isMobileMenuOpen && (
-          <div className="md:hidden pb-4">
-            {navItems.map((item) => (
-              <Link key={item.path} to={item.path} className={`block py-3 text-sm font-medium transition-colors hover:text-primary ${location.pathname === item.path ? 'text-primary' : 'text-gray-700'}`} onClick={() => setIsMobileMenuOpen(false)}>
-                {item.name}
+      </nav>
+
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-40 lg:hidden">
+          <div 
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm animate-fade-in"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          <div className="absolute top-20 left-0 right-0 bg-white shadow-2xl animate-fade-in-up">
+            <div className="container mx-auto px-4 py-6 space-y-2">
+              {navItems.map((item) => (
+                <Link 
+                  key={item.path} 
+                  to={item.path} 
+                  className={`block px-4 py-3 text-base font-semibold rounded-lg transition-colors ${
+                    location.pathname === item.path 
+                      ? 'text-primary bg-primary/10' 
+                      : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <Link to="/book-appointment" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
+                  BOOK APPOINTMENT
+                </Button>
               </Link>
-            ))}
+            </div>
           </div>
-        )}
-      </div>
-    </nav>
+        </div>
+      )}
+    </>
   );
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pulse, Heart, Shield, Clock as ClockIcon, TrendUp, Sparkle } from '@phosphor-icons/react';
+import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pulse, Heart, Shield, Clock as ClockIcon, Sparkle } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -11,74 +11,8 @@ import operatingTheater3 from '@/assets/images/modern_operation_theater_3.jpeg';
 import performingProcedure1 from '@/assets/images/Performing_procedures_1.jpg';
 import performingProcedure2 from '@/assets/images/Performing_procedures_2.jpg';
 import medicalImaging1 from '@/assets/images/Pelvis-Iliac11_3_fps.jpg';
-import medicalImaging2 from '@/assets/images/Pelvis-Iliac5_3_fps.jpg';
 
 export default function Home() {
-  const procedures = [
-    { 
-      id: 1,
-      title: 'Uterine Fibroid Embolization', 
-      description: 'Non-surgical treatment for uterine fibroids using advanced imaging techniques',
-      category: 'Women\'s Health',
-      icon: <Pulse size={32} weight="duotone" />
-    },
-    { 
-      id: 2,
-      title: 'Varicose Vein Treatment', 
-      description: 'Minimally invasive procedures to treat varicose veins and venous insufficiency',
-      category: 'Vascular',
-      icon: <Heart size={32} weight="duotone" />
-    },
-    { 
-      id: 3,
-      title: 'Prostate Artery Embolization', 
-      description: 'Advanced treatment for benign prostatic hyperplasia (enlarged prostate)',
-      category: 'Men\'s Health',
-      icon: <Shield size={32} weight="duotone" />
-    },
-    { 
-      id: 4,
-      title: 'Vertebroplasty & Kyphoplasty', 
-      description: 'Spinal fracture stabilization for pain relief and vertebral restoration',
-      category: 'Spine',
-      icon: <TrendUp size={32} weight="duotone" />
-    },
-    { 
-      id: 5,
-      title: 'Tumor Ablation', 
-      description: 'Image-guided minimally invasive cancer treatment with precision targeting',
-      category: 'Oncology',
-      icon: <Sparkle size={32} weight="duotone" />
-    },
-    { 
-      id: 6,
-      title: 'Dialysis Access Management', 
-      description: 'Creation and maintenance of vascular access for dialysis patients',
-      category: 'Vascular',
-      icon: <Pulse size={32} weight="duotone" />
-    },
-    { 
-      id: 7,
-      title: 'Liver & Kidney Biopsies', 
-      description: 'Image-guided tissue sampling for accurate diagnosis',
-      category: 'Diagnostic',
-      icon: <CheckCircle size={32} weight="duotone" />
-    },
-    { 
-      id: 8,
-      title: 'Port-a-Cath Placement', 
-      description: 'Central venous access device insertion for long-term medication delivery',
-      category: 'Access',
-      icon: <Heart size={32} weight="duotone" />
-    },
-    { 
-      id: 9,
-      title: 'Embolization Procedures', 
-      description: 'Treatment for bleeding, tumors, and vascular malformations',
-      category: 'Vascular',
-      icon: <Shield size={32} weight="duotone" />
-    },
-  ];
 
   const benefits = [
     { 
@@ -280,55 +214,6 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              Our Services | Specialized Treatments
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive interventional radiology procedures tailored to your needs
-            </p>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {procedures.map((procedure) => (
-              <Card 
-                key={procedure.id} 
-                className="group relative overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-300 hover:shadow-2xl"
-              >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500" />
-                
-                <div className="relative p-6">
-                  <Badge className="mb-4 text-xs font-semibold bg-primary/10 text-primary border-primary/20">
-                    {procedure.category}
-                  </Badge>
-                  
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
-                    {procedure.icon}
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {procedure.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {procedure.description}
-                  </p>
-                  
-                  <Link to={`/procedure/${procedure.id}`}>
-                    <Button variant="ghost" className="group/btn text-primary hover:text-primary hover:bg-primary/10 font-semibold p-0">
-                      Learn More
-                      <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" weight="bold" />
-                    </Button>
-                  </Link>
-                </div>
               </Card>
             ))}
           </div>

@@ -16,7 +16,7 @@ interface PhotoGalleryProps {
   aspectRatio?: 'square' | 'landscape' | 'portrait';
 }
 
-export default function PhotoGallery({ photos, columns = 3, aspectRatio = 'landscape' }: PhotoGalleryProps) {
+function PhotoGallery({ photos, columns = 3, aspectRatio = 'landscape' }: PhotoGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const aspectClasses = {
@@ -136,3 +136,5 @@ export default function PhotoGallery({ photos, columns = 3, aspectRatio = 'lands
     </>
   );
 }
+
+export default PhotoGallery;

@@ -355,7 +355,7 @@ export default function Home() {
             <p className="text-muted-foreground mb-6">Follow us on social media for updates and health tips</p>
             <div className="flex gap-4">
               <a 
-                href="https://www.facebook.com/profile.php?id=61571668382999" 
+                href="https://www.facebook.com/dragathangelou" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-primary/10 hover:bg-[#1877F2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
@@ -364,7 +364,7 @@ export default function Home() {
                 <FacebookLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
               </a>
               <a 
-                href="https://www.instagram.com/dr.agathangelou.marios/" 
+                href="https://www.instagram.com/dr_agathangelou/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-primary/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
@@ -373,7 +373,7 @@ export default function Home() {
                 <InstagramLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/marios-agathangelou-15544a148/" 
+                href="https://www.linkedin.com/in/marios-agathangelou/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-primary/10 hover:bg-[#0A66C2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"

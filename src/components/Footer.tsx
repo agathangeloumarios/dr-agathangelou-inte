@@ -25,7 +25,7 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a 
-              href="https://www.facebook.com" 
+              href="https://www.facebook.com/profile.php?id=61571668382999" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-11 h-11 bg-white/10 hover:bg-[#1877F2] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
@@ -34,7 +34,7 @@ export default function Footer() {
               <FacebookLogo size={24} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
             </a>
             <a 
-              href="https://www.instagram.com" 
+              href="https://www.instagram.com/dr.agathangelou.marios/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-11 h-11 bg-white/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
@@ -43,7 +43,7 @@ export default function Footer() {
               <InstagramLogo size={24} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
             </a>
             <a 
-              href="https://www.linkedin.com" 
+              href="https://www.linkedin.com/in/marios-agathangelou-15544a148/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-11 h-11 bg-white/10 hover:bg-[#0A66C2] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"

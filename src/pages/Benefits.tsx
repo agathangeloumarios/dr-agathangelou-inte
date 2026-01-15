@@ -21,7 +21,7 @@ export default function Benefits() {
       title: 'Faster Recovery', 
       description: 'Most procedures are outpatient with same-day discharge, allowing patients to return home quickly and resume normal activities within days rather than weeks.',
       icon: <Clock size={48} weight="duotone" className="text-primary" />,
-      details: ['Same-day discharge', 'Quick return to activities', 'Shorter hospital stays', 'Less time off work']
+      details: ['Same-day discharge', 'Quick return to activities', 'Shorter hospital stay', 'Less time off work']
     },
     { 
       title: 'Reduced Pain', 

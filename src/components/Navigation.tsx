@@ -1,12 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { List, X } from '@phosphor-icons/react';
+import { List, X, Pulse } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import logo from '@/assets/images/logo.png';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -43,7 +44,18 @@ export default function Navigation() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link to="/" className="flex items-center space-x-3 group">
-              <img src={logo} alt="Dr. Agathangelou Marios Logo" className="h-11 w-auto" />
+              {!logoError && logo ? (
+                <img 
+                  src={logo} 
+                  alt="Dr. Agathangelou Marios Logo" 
+                  className="h-11 w-auto" 
+                  onError={() => setLogoError(true)}
+                />
+              ) : (
+                <div className="h-11 w-11 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Pulse className="text-primary" size={28} weight="bold" />
+                </div>
+              )}
               <div className="flex flex-col">
                 <span className="font-bold text-lg tracking-tight text-foreground">Dr Agathangelou Marios</span>
                 <span className="text-xs text-muted-foreground font-medium">Interventional Radiologist</span>

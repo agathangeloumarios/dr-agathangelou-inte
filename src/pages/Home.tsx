@@ -71,7 +71,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative pt-32 pb-24 px-4 overflow-hidden bg-gradient-to-br from-background via-white to-primary/5">
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-gradient-to-br from-background via-white to-primary/5">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -123,28 +123,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="what-is" className="py-24 px-4 bg-white">
+      <section id="what-is" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               What is Interventional Radiology?
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="space-y-5">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 <span className="font-semibold text-foreground">Interventional Radiology</span> is a medical specialty that uses minimally invasive, image-guided procedures to diagnose and treat diseases throughout the body.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Using advanced imaging techniques such as <span className="font-semibold text-foreground">X-rays, CT scans, ultrasound, and MRI</span>, interventional radiologists can perform precise treatments through small incisions, typically no larger than a pencil tip.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 These procedures result in <span className="font-semibold text-foreground">less pain, shorter recovery times</span>, and reduced risk of complications compared to traditional surgery.
               </p>
               
-              <div className="grid grid-cols-3 gap-4 pt-6">
+              <div className="grid grid-cols-3 gap-4 pt-4">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-1">12+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
@@ -168,14 +168,14 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
-                    <Pulse size={40} weight="duotone" className="text-white" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-3">
+                    <Pulse size={32} weight="duotone" className="text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">
+                  <h3 className="text-xl font-bold mb-2">
                     Image-Guided Precision Care
                   </h3>
-                  <p className="text-white/90">
+                  <p className="text-sm text-white/90">
                     Advanced technology meets medical expertise for optimal patient outcomes
                   </p>
                 </div>
@@ -185,9 +185,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-gradient-to-br from-background to-muted/30">
+      <section className="py-16 px-4 bg-gradient-to-br from-background to-muted/30">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               Benefits of Interventional Radiology
             </h2>
@@ -214,9 +214,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-gradient-to-br from-muted/30 to-background">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+      <section className="py-16 px-4 bg-gradient-to-br from-muted/30 to-background">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               Testimonials from Satisfied Patients
             </h2>
@@ -226,21 +226,21 @@ export default function Home() {
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-8 bg-white hover:shadow-xl transition-all duration-300 border-2 border-border">
-                <div className="flex items-center gap-2 mb-4">
+              <Card key={index} className="p-5 bg-white hover:shadow-xl transition-all duration-300 border-2 border-border">
+                <div className="flex items-center gap-2 mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={20} weight="fill" className="text-accent" />
+                    <Star key={i} size={18} weight="fill" className="text-accent" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed italic">
                   "{testimonial.text}"
                 </p>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.procedure}</p>
+                    <p className="font-bold text-foreground text-sm">{testimonial.name}</p>
+                    <p className="text-xs text-muted-foreground">{testimonial.procedure}</p>
                   </div>
                 </div>
               </Card>
@@ -258,9 +258,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section className="py-16 px-4 bg-gradient-to-br from-background to-muted/20">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               Our Facilities & Technology
             </h2>
@@ -285,58 +285,58 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Contact</h2>
             <p className="text-xl text-muted-foreground">Get in touch with our team</p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <MapPin size={32} weight="duotone" className="text-primary" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                <MapPin size={28} weight="duotone" className="text-primary" />
               </div>
-              <h3 className="font-bold text-foreground mb-3 text-lg">Address</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="font-bold text-foreground mb-2 text-base">Address</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Achaion 22<br />
                 Nicosia 1101<br />
                 Cyprus
               </p>
             </Card>
             
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Phone size={32} weight="duotone" className="text-primary" />
+            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                <Phone size={28} weight="duotone" className="text-primary" />
               </div>
-              <h3 className="font-bold text-foreground mb-3 text-lg">Phone</h3>
+              <h3 className="font-bold text-foreground mb-2 text-base">Phone</h3>
               <a 
                 href="tel:96973434" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
               >
                 96 973434
               </a>
             </Card>
             
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Clock size={32} weight="duotone" className="text-primary" />
+            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                <Clock size={28} weight="duotone" className="text-primary" />
               </div>
-              <h3 className="font-bold text-foreground mb-3 text-lg">Hours</h3>
-              <p className="text-muted-foreground">
+              <h3 className="font-bold text-foreground mb-2 text-base">Hours</h3>
+              <p className="text-sm text-muted-foreground">
                 Open 24 hours
               </p>
             </Card>
             
-            <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <EnvelopeSimple size={32} weight="duotone" className="text-primary" />
+            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                <EnvelopeSimple size={28} weight="duotone" className="text-primary" />
               </div>
-              <h3 className="font-bold text-foreground mb-3 text-lg">Email</h3>
+              <h3 className="font-bold text-foreground mb-2 text-base">Email</h3>
               <a 
                 href="mailto:agathangeloumarios@gmail.com" 
-                className="text-muted-foreground hover:text-primary transition-colors break-all text-sm"
+                className="text-muted-foreground hover:text-primary transition-colors break-all text-xs"
               >
                 agathangeloumarios@gmail.com
               </a>
@@ -344,35 +344,35 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Connect With Us</h3>
-            <p className="text-muted-foreground mb-6">Follow us on social media for updates and health tips</p>
+            <h3 className="text-xl font-bold text-foreground mb-3">Connect With Us</h3>
+            <p className="text-sm text-muted-foreground mb-5">Follow us on social media for updates and health tips</p>
             <div className="flex gap-4">
               <a 
                 href="https://www.facebook.com/dragathangelou" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-primary/10 hover:bg-[#1877F2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                className="w-12 h-12 bg-primary/10 hover:bg-[#1877F2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
                 aria-label="Follow us on Facebook"
               >
-                <FacebookLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
+                <FacebookLogo size={24} weight="fill" className="text-primary group-hover:text-white transition-colors" />
               </a>
               <a 
                 href="https://www.instagram.com/dr_agathangelou/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-primary/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                className="w-12 h-12 bg-primary/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
                 aria-label="Follow us on Instagram"
               >
-                <InstagramLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
+                <InstagramLogo size={24} weight="fill" className="text-primary group-hover:text-white transition-colors" />
               </a>
               <a 
                 href="https://www.linkedin.com/in/marios-agathangelou/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-primary/10 hover:bg-[#0A66C2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+                className="w-12 h-12 bg-primary/10 hover:bg-[#0A66C2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
                 aria-label="Follow us on LinkedIn"
               >
-                <LinkedinLogo size={28} weight="fill" className="text-primary group-hover:text-white transition-colors" />
+                <LinkedinLogo size={24} weight="fill" className="text-primary group-hover:text-white transition-colors" />
               </a>
             </div>
           </div>

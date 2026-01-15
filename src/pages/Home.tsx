@@ -82,19 +82,13 @@ export default function Home() {
             Precision Medical Care • Advanced Technology
           </Badge>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 tracking-tight leading-tight">
-            Interventional Radiology
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-8 tracking-tight leading-tight">
+            Dr Agathangelou Marios<br />
+            <span className="text-primary">Interventional Radiologist</span>
           </h1>
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full" />
-            <p className="text-2xl md:text-3xl text-primary font-bold tracking-wider">
-              PRECISION. INNOVATION
-            </p>
-            <div className="h-1 w-12 bg-primary rounded-full" />
-          </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-            Doctor Agathangelou Marios MD MSc
+            Dr Agathangelou Marios MD MSc
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
             Specialized in new Minimally invasive Techniques
@@ -107,10 +101,10 @@ export default function Home() {
               ))}
             </div>
             <span className="text-foreground font-semibold text-lg">
-              100% προτείνουν
+              100% recommended
             </span>
             <Badge variant="secondary" className="font-semibold">
-              17 κριτικές
+              17 reviews
             </Badge>
           </div>
           

@@ -14,8 +14,8 @@ export default function Footer() {
               </svg>
             </div>
             <div className="flex flex-col items-start">
-              <span className="font-bold text-lg">Dr. Marios</span>
-              <span className="text-xs text-gray-400">Interventional Radiology</span>
+              <span className="font-bold text-lg">Dr Agathangelou Marios</span>
+              <span className="text-xs text-gray-400">Interventional Radiologist</span>
             </div>
           </div>
           

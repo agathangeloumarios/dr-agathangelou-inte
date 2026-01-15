@@ -58,7 +58,7 @@ export default function Navigation() {
               )}
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-foreground leading-tight group-hover:text-primary transition-colors">
-                  Interventional Radiologist
+                  Dr. Marios Interventional Radiologist
                 </span>
               </div>
             </Link>

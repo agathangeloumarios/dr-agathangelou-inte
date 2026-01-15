@@ -146,11 +146,11 @@ export default function Home() {
               
               <div className="grid grid-cols-3 gap-4 pt-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">15+</div>
+                  <div className="text-3xl font-bold text-primary mb-1">12+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">1000+</div>
+                  <div className="text-3xl font-bold text-primary mb-1">4500+</div>
                   <div className="text-sm text-muted-foreground">Procedures</div>
                 </div>
                 <div className="text-center">

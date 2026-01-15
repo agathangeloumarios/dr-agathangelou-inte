@@ -56,10 +56,6 @@ export default function Navigation() {
                   <Pulse className="text-primary" size={28} weight="bold" />
                 </div>
               )}
-              <div className="flex flex-col">
-                <span className="font-bold text-lg tracking-tight text-foreground">Dr Agathangelou Marios</span>
-                <span className="text-xs text-muted-foreground font-medium">Interventional Radiologist</span>
-              </div>
             </Link>
             
             <div className="hidden lg:flex items-center space-x-1">

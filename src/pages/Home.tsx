@@ -78,10 +78,6 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto text-center max-w-5xl relative z-10">
-          <Badge className="mb-6 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20 hover:bg-primary/15">
-            Precision Medical Care • Advanced Technology
-          </Badge>
-          
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-8 tracking-tight leading-tight">
             Dr Agathangelou Marios<br />
             <span className="text-primary">Interventional Radiologist</span>

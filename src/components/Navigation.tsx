@@ -52,8 +52,8 @@ export default function Navigation() {
                 </div>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg tracking-tight text-foreground">Dr. Marios</span>
-                <span className="text-xs text-muted-foreground font-medium">Interventional Radiology</span>
+                <span className="font-bold text-lg tracking-tight text-foreground">Dr Agathangelou Marios</span>
+                <span className="text-xs text-muted-foreground font-medium">Interventional Radiologist</span>
               </div>
             </Link>
             

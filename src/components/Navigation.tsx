@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { List, X } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/images/logo.png';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,15 +43,7 @@ export default function Navigation() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="relative w-11 h-11">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80 rounded-xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center">
-                  <svg className="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L12 22M2 12L22 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-                    <circle cx="12" cy="12" r="3" fill="currentColor"/>
-                  </svg>
-                </div>
-              </div>
+              <img src={logo} alt="Dr. Agathangelou Marios Logo" className="h-11 w-auto" />
               <div className="flex flex-col">
                 <span className="font-bold text-lg tracking-tight text-foreground">Dr Agathangelou Marios</span>
                 <span className="text-xs text-muted-foreground font-medium">Interventional Radiologist</span>

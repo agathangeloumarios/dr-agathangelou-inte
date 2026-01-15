@@ -18,7 +18,7 @@ export default function Team() {
     { icon: <GraduationCap size={24} weight="duotone" />, title: 'MD - Doctor of Medicine', description: 'Medical University' },
     { icon: <Certificate size={24} weight="duotone" />, title: 'MSc - Master of Science', description: 'Interventional Radiology' },
     { icon: <Medal size={24} weight="duotone" />, title: 'Board Certified', description: 'Interventional Radiology' },
-    { icon: <Briefcase size={24} weight="duotone" />, title: '15+ Years Experience', description: 'Clinical Practice' },
+    { icon: <Briefcase size={24} weight="duotone" />, title: '12+ Years Experience', description: 'Clinical Practice' },
   ];
 
   const expertise = [
@@ -53,7 +53,7 @@ export default function Team() {
           </Badge>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground tracking-tight">
-            Meet Dr. Marios
+            Meet Dr. Agathangelou Marios
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -110,16 +110,16 @@ export default function Team() {
             
             <div className="lg:col-span-3 space-y-8">
               <div>
-                <h3 className="text-3xl font-bold text-foreground mb-6">About Dr. Marios</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-6">About Dr. Agathangelou Marios</h3>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Dr. Marios Agathangelou is a highly skilled <span className="font-semibold text-foreground">interventional radiologist</span> with extensive experience in minimally invasive procedures. His expertise spans a wide range of image-guided treatments, from vascular interventions to complex tumor ablations.
+                    Dr. Agathangelou Marios is a highly skilled <span className="font-semibold text-foreground">interventional radiologist</span> with extensive experience in minimally invasive procedures. His expertise spans a wide range of image-guided treatments, from vascular interventions to complex tumor ablations.
                   </p>
                   <p>
                     With a commitment to <span className="font-semibold text-foreground">patient-centered care</span>, Dr. Agathangelou combines cutting-edge technology with compassionate treatment, ensuring each patient receives personalized attention and optimal outcomes.
                   </p>
                   <p>
-                    Dr. Marios stays at the forefront of interventional radiology through continuous education and adoption of the latest <span className="font-semibold text-foreground">minimally invasive techniques</span>, providing patients with advanced treatment options that minimize recovery time and maximize results.
+                    Dr. Agathangelou stays at the forefront of interventional radiology through continuous education and adoption of the latest <span className="font-semibold text-foreground">minimally invasive techniques</span>, providing patients with advanced treatment options that minimize recovery time and maximize results.
                   </p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Team() {
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Professional Gallery</h3>
             <p className="text-lg text-muted-foreground">
-              Dr. Marios in practice, performing advanced interventional procedures
+              Dr. Agathangelou in practice, performing advanced interventional procedures
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
@@ -177,7 +177,7 @@ export default function Team() {
           <PhotoGallery 
             photos={[
               { src: drPhoto1, alt: 'Dr. Agathangelou performing procedure', title: 'Advanced Interventional Procedure' },
-              { src: performingProcedure3, alt: 'Dr. Marios performing procedures', title: 'Precision Medical Care' },
+              { src: performingProcedure3, alt: 'Dr. Agathangelou performing procedures', title: 'Precision Medical Care' },
               { src: drPhotoClarivein, alt: 'Clarivein procedure', title: 'Clarivein Vein Treatment' }
             ]}
             columns={3}

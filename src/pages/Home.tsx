@@ -57,7 +57,7 @@ export default function Home() {
     },
     { 
       name: 'John P.', 
-      text: 'Professional, caring, and highly skilled. Dr. Marios took the time to explain everything clearly and made me feel comfortable. The results exceeded my expectations.', 
+      text: 'Professional, caring, and highly skilled. Dr. Agathangelou took the time to explain everything clearly and made me feel comfortable. The results exceeded my expectations.', 
       rating: 5,
       procedure: 'Vascular Treatment'
     },

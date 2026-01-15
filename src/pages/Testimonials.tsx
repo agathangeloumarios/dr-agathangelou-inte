@@ -18,7 +18,7 @@ export default function Testimonials() {
     { 
       name: 'John P.', 
       procedure: 'Prostate Artery Embolization', 
-      text: 'Professional, caring, and highly skilled. Dr. Marios took the time to thoroughly explain every step of the procedure and answered all my questions with patience. The results have been life-changing, and I couldn\'t be more satisfied with the care I received.', 
+      text: 'Professional, caring, and highly skilled. Dr. Agathangelou took the time to thoroughly explain every step of the procedure and answered all my questions with patience. The results have been life-changing, and I couldn\'t be more satisfied with the care I received.', 
       rating: 5, 
       date: 'November 2024',
       location: 'Limassol'
@@ -34,7 +34,7 @@ export default function Testimonials() {
     { 
       name: 'Andreas M.', 
       procedure: 'Vertebroplasty', 
-      text: 'After years of debilitating back pain, I finally found relief through Dr. Marios\' expertise. The procedure was quick, and I felt improvement almost immediately. Excellent care from start to finish. I wish I had done this sooner!', 
+      text: 'After years of debilitating back pain, I finally found relief through Dr. Agathangelou\'s expertise. The procedure was quick, and I felt improvement almost immediately. Excellent care from start to finish. I wish I had done this sooner!', 
       rating: 5, 
       date: 'September 2024',
       location: 'Larnaca'
@@ -42,7 +42,7 @@ export default function Testimonials() {
     { 
       name: 'Christina L.', 
       procedure: 'Tumor Ablation', 
-      text: 'Dr. Marios and his team were incredible throughout my treatment. Their professionalism, compassion, and expertise gave me confidence during a difficult time. The minimally invasive approach made such a difference in my recovery. Forever grateful!', 
+      text: 'Dr. Agathangelou and his team were incredible throughout my treatment. Their professionalism, compassion, and expertise gave me confidence during a difficult time. The minimally invasive approach made such a difference in my recovery. Forever grateful!', 
       rating: 5, 
       date: 'August 2024',
       location: 'Paphos'
@@ -58,7 +58,7 @@ export default function Testimonials() {
     { 
       name: 'Sofia A.', 
       procedure: 'Port-a-Cath Placement', 
-      text: 'Dr. Marios made what could have been a stressful procedure completely manageable. He was gentle, efficient, and extremely professional. The port works perfectly and has made my chemotherapy treatments much easier. Thank you!', 
+      text: 'Dr. Agathangelou made what could have been a stressful procedure completely manageable. He was gentle, efficient, and extremely professional. The port works perfectly and has made my chemotherapy treatments much easier. Thank you!', 
       rating: 5, 
       date: 'June 2024',
       location: 'Limassol'
@@ -74,7 +74,7 @@ export default function Testimonials() {
     { 
       name: 'Anna P.', 
       procedure: 'Embolization Procedure', 
-      text: 'Exceptional medical care from an exceptional doctor. Dr. Marios\' expertise and modern approach to treatment made all the difference. I experienced minimal discomfort and recovered quickly. Highly recommended!', 
+      text: 'Exceptional medical care from an exceptional doctor. Dr. Agathangelou\'s expertise and modern approach to treatment made all the difference. I experienced minimal discomfort and recovered quickly. Highly recommended!', 
       rating: 5, 
       date: 'April 2024',
       location: 'Larnaca'
@@ -84,8 +84,8 @@ export default function Testimonials() {
   const stats = [
     { value: '100%', label: 'Patient Satisfaction' },
     { value: '17+', label: 'Five-Star Reviews' },
-    { value: '1000+', label: 'Procedures Performed' },
-    { value: '15+', label: 'Years Experience' },
+    { value: '4500+', label: 'Procedures Performed' },
+    { value: '12+', label: 'Years Experience' },
   ];
 
   return (

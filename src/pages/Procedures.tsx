@@ -382,7 +382,7 @@ export default function Procedures() {
             </Link>
             <Link to="/team">
               <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-lg px-8 py-6">
-                Meet Dr. Marios
+                Meet Dr. Agathangelou
               </Button>
             </Link>
           </div>

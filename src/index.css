@@ -27,8 +27,8 @@
   --popover: oklch(95.4% 0.038 75.164);
   --popover-foreground: #262626;
   
-  --primary: #172435;
-  --primary-foreground: #EBD1A8;
+  --primary: #EBD1A8;
+  --primary-foreground: #172435;
   
   --secondary: oklch(50.5% 0.213 27.518);
   --secondary-foreground: oklch(49.1% 0.27 292.581);

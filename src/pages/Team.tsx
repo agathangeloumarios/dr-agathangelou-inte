@@ -23,13 +23,13 @@ export default function Team() {
 
   const expertise = [
     'Uterine Fibroid Embolization',
-    'Vascular Interventions',
-    'Tumor Ablation Techniques',
-    'Spine Interventions',
-    'Dialysis Access Management',
-    'Image-Guided Biopsies',
-    'Port Placement & Central Lines',
-    'Embolization Procedures',
+    'Angioplasty and Stenting',
+    'Interventional Oncology',
+    'Minimally Invasive Pain Treatment',
+    'Varicose Veins Treatment',
+    'Ablation of Thyroid Nodules',
+    'Varicocele Embolization',
+    'Breast Cryotherapy',
   ];
 
   const philosophy = [

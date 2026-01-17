@@ -78,13 +78,9 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto text-center max-w-5xl relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 tracking-tight leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-8 tracking-tight leading-tight">
             Interventional Radiology
           </h1>
-          
-          <p className="text-2xl md:text-3xl text-primary mb-8 font-bold tracking-wide">
-            PRECISION. INNOVATION.
-          </p>
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
             Dr Agathangelou Marios MD MSc

@@ -7,7 +7,7 @@ export default function Footer() {
   const [logoError, setLogoError] = useState(false);
   
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
+    <footer className="text-white py-16 px-4" style={{ backgroundColor: '#22232F' }}>
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center space-y-6">
           <div className="flex items-center space-x-3">

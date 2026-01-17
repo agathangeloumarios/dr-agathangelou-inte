@@ -36,11 +36,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-border' 
-          : 'bg-white/80 backdrop-blur-sm'
-      }`}>
+      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#22232F' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link to="/" className="flex items-center space-x-3 group">
@@ -57,7 +53,7 @@ export default function Navigation() {
                 </div>
               )}
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground leading-tight group-hover:text-primary transition-colors">
+                <span className="text-lg font-bold text-white leading-tight group-hover:text-primary transition-colors">
                   Dr Agathangelou Marios
                 </span>
               </div>
@@ -71,7 +67,7 @@ export default function Navigation() {
                   className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${
                     location.pathname === item.path 
                       ? 'text-primary bg-primary/10' 
-                      : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
+                      : 'text-white/80 hover:text-primary hover:bg-white/5'
                   }`}
                 >
                   {item.name}
@@ -85,7 +81,7 @@ export default function Navigation() {
             </div>
             
             <button 
-              className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+              className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors text-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -101,7 +97,7 @@ export default function Navigation() {
             className="absolute inset-0 bg-black/40 backdrop-blur-sm animate-fade-in"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="absolute top-20 left-0 right-0 bg-white shadow-2xl animate-fade-in-up">
+          <div className="absolute top-20 left-0 right-0 shadow-2xl animate-fade-in-up" style={{ backgroundColor: '#22232F' }}>
             <div className="container mx-auto px-4 py-6 space-y-2">
               {navItems.map((item) => (
                 <Link 
@@ -110,7 +106,7 @@ export default function Navigation() {
                   className={`block px-4 py-3 text-base font-semibold rounded-lg transition-colors ${
                     location.pathname === item.path 
                       ? 'text-primary bg-primary/10' 
-                      : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
+                      : 'text-white/80 hover:text-primary hover:bg-white/5'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

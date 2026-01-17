@@ -217,7 +217,7 @@ export default function ProcedureDetail() {
       process: [
         'Catheter inserted via neck or groin vein',
         'Guided to testicular veins using X-ray',
-        'Coils or agents block abnormal veins',
+        'Coils block abnormal veins',
         'Normal venous drainage restored',
         'Procedure takes about 60 minutes'
       ],

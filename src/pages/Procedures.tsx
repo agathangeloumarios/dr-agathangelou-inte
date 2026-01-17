@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from '@phosphor-icons/react';
+import { ArrowRight, ImageSquare } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Footer from '@/components/Footer';
+
+const img1456 = '/src/assets/images/IMG_1456.JPG';
+const img1613 = '/src/assets/images/IMG_1613.JPG';
+const pelvisIliac5 = '/src/assets/images/Pelvis-Iliac5_3_fps.jpg';
+const pelvisIliac11 = '/src/assets/images/Pelvis-Iliac11_3_fps.jpg';
 
 const UterusIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,6 +346,133 @@ export default function Procedures() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-white to-accent/5">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20">
+              <ImageSquare size={18} weight="duotone" className="mr-2 inline" />
+              Real Patient Results
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              Before & After Results
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              See the transformative outcomes our patients experience through minimally invasive interventional radiology procedures
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="group overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-300 hover:shadow-2xl">
+              <div className="relative h-80 overflow-hidden">
+                <div className="absolute inset-0 grid grid-cols-2 gap-0">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={img1456} 
+                      alt="Before treatment"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <Badge className="bg-muted/90 backdrop-blur-sm text-muted-foreground font-semibold">
+                        Before
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={img1613} 
+                      alt="After treatment"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-primary text-primary-foreground font-semibold">
+                        After
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-xl font-bold mb-1">Uterine Fibroid Embolization</h3>
+                  <p className="text-white/90 text-sm">Significant symptom relief with minimal recovery</p>
+                </div>
+              </div>
+              <div className="p-6 bg-gradient-to-br from-primary/5 to-transparent">
+                <Link to="/procedure/1">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full group/btn text-primary hover:text-white hover:bg-[#a855f7] font-semibold transition-colors duration-300"
+                  >
+                    View Full Gallery
+                    <ArrowRight 
+                      size={18} 
+                      className="ml-2 group-hover/btn:translate-x-1 transition-transform" 
+                      weight="bold" 
+                    />
+                  </Button>
+                </Link>
+              </div>
+            </Card>
+
+            <Card className="group overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-300 hover:shadow-2xl">
+              <div className="relative h-80 overflow-hidden">
+                <div className="absolute inset-0 grid grid-cols-2 gap-0">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={pelvisIliac5} 
+                      alt="Before treatment"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <Badge className="bg-muted/90 backdrop-blur-sm text-muted-foreground font-semibold">
+                        Before
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={pelvisIliac11} 
+                      alt="After treatment"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-primary text-primary-foreground font-semibold">
+                        After
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-xl font-bold mb-1">Angioplasty & Stenting</h3>
+                  <p className="text-white/90 text-sm">Restored blood flow with immediate improvement</p>
+                </div>
+              </div>
+              <div className="p-6 bg-gradient-to-br from-primary/5 to-transparent">
+                <Link to="/procedure/2">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full group/btn text-primary hover:text-white hover:bg-[#a855f7] font-semibold transition-colors duration-300"
+                  >
+                    View Full Gallery
+                    <ArrowRight 
+                      size={18} 
+                      className="ml-2 group-hover/btn:translate-x-1 transition-transform" 
+                      weight="bold" 
+                    />
+                  </Button>
+                </Link>
+              </div>
+            </Card>
+          </div>
+
+          <div className="text-center p-6 bg-muted/30 rounded-lg border border-border">
+            <p className="text-sm text-muted-foreground">
+              Click on any procedure card above to explore interactive before/after galleries with detailed case information
+            </p>
           </div>
         </div>
       </section>

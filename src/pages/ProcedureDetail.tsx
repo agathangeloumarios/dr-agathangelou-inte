@@ -1,11 +1,21 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, CheckCircle, Clock, Calendar, Info, Pulse, Heart, Shield, TrendUp, Sparkle } from '@phosphor-icons/react';
+import { ArrowLeft, CheckCircle, Clock, Calendar, Info, Pulse, Heart, Shield, TrendUp, Sparkle, ImageSquare } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import Footer from '@/components/Footer';
+import BeforeAfterGallery from '@/components/BeforeAfterGallery';
 import performingProcedure from '@/assets/images/modern_operation_theater_3.jpeg';
+
+const img1456 = '/src/assets/images/IMG_1456.JPG';
+const img1613 = '/src/assets/images/IMG_1613.JPG';
+const img1617 = '/src/assets/images/IMG_1617.JPG';
+const img2046 = '/src/assets/images/IMG_2046.JPG';
+const img2274 = '/src/assets/images/IMG_2274.JPG';
+const img2532 = '/src/assets/images/IMG_2532.JPG';
+const pelvisIliac11 = '/src/assets/images/Pelvis-Iliac11_3_fps.jpg';
+const pelvisIliac5 = '/src/assets/images/Pelvis-Iliac5_3_fps.jpg';
 
 export default function ProcedureDetail() {
   const { id } = useParams();
@@ -34,7 +44,23 @@ export default function ProcedureDetail() {
         'Procedure takes 45-90 minutes'
       ],
       whatToExpect: 'Most patients return to normal activities within 7-10 days. Mild cramping and discomfort are common initially but resolve quickly.',
-      idealCandidates: 'Women with symptomatic fibroids who wish to avoid surgery or preserve fertility options.'
+      idealCandidates: 'Women with symptomatic fibroids who wish to avoid surgery or preserve fertility options.',
+      beforeAfterImages: [
+        {
+          before: img1456,
+          after: img1613,
+          title: 'Fibroid Reduction - Case 1',
+          description: 'Significant reduction in fibroid size after UFE procedure, with improved symptoms',
+          category: 'Women\'s Health'
+        },
+        {
+          before: img2046,
+          after: img2274,
+          title: 'Fibroid Treatment - Case 2',
+          description: 'Complete resolution of symptoms with minimal recovery time',
+          category: 'Women\'s Health'
+        }
+      ]
     },
     '2': { 
       title: 'Angioplasty and Stenting',
@@ -58,7 +84,16 @@ export default function ProcedureDetail() {
         'Blood flow immediately restored'
       ],
       whatToExpect: 'Most patients resume normal activities within a few days. Blood thinning medications prescribed to prevent clotting.',
-      idealCandidates: 'Patients with arterial blockages causing poor circulation, leg pain, or risk of stroke.'
+      idealCandidates: 'Patients with arterial blockages causing poor circulation, leg pain, or risk of stroke.',
+      beforeAfterImages: [
+        {
+          before: pelvisIliac5,
+          after: pelvisIliac11,
+          title: 'Arterial Revascularization',
+          description: 'Successful restoration of blood flow through blocked pelvic artery',
+          category: 'Vascular'
+        }
+      ]
     },
     '3': { 
       title: 'Interventional Oncology',
@@ -131,7 +166,16 @@ export default function ProcedureDetail() {
         'Compression stockings worn post-procedure'
       ],
       whatToExpect: 'Resume normal activities immediately. Some bruising and mild discomfort may occur but typically resolves within a week.',
-      idealCandidates: 'Patients with symptomatic varicose veins, leg pain, swelling, or cosmetic concerns.'
+      idealCandidates: 'Patients with symptomatic varicose veins, leg pain, swelling, or cosmetic concerns.',
+      beforeAfterImages: [
+        {
+          before: img1617,
+          after: img2532,
+          title: 'Varicose Vein Resolution',
+          description: 'Dramatic improvement in leg appearance and symptom relief after endovenous treatment',
+          category: 'Vascular'
+        }
+      ]
     },
     '6': { 
       title: 'Ablation of Thyroid Nodules',
@@ -335,6 +379,32 @@ export default function ProcedureDetail() {
               </ol>
             </Card>
           </div>
+          
+          {procedure.beforeAfterImages && procedure.beforeAfterImages.length > 0 && (
+            <div className="mb-12">
+              <div className="text-center mb-8">
+                <Badge className="mb-4 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20">
+                  <ImageSquare size={18} weight="duotone" className="mr-2 inline" />
+                  Patient Results
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+                  Before & After Gallery
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Real patient results demonstrating the effectiveness of our minimally invasive procedures
+                </p>
+              </div>
+              
+              <BeforeAfterGallery images={procedure.beforeAfterImages} />
+              
+              <div className="mt-8 p-6 bg-muted/30 rounded-lg border border-border">
+                <p className="text-sm text-muted-foreground text-center">
+                  <strong>Disclaimer:</strong> Individual results may vary. These images represent actual patient outcomes but should not be considered typical or guaranteed results. 
+                  Consult with Dr. Agathangelou Marios to discuss your specific situation and expected outcomes.
+                </p>
+              </div>
+            </div>
+          )}
           
           <Card className="p-8 mb-8 bg-gradient-to-br from-purple/5 to-purple/10 border-2 border-purple/20">
             <h2 className="text-2xl font-bold mb-4 text-foreground">What to Expect</h2>

@@ -16,8 +16,9 @@ export default function ProcedureDetail() {
       icon: <Pulse size={64} weight="duotone" className="text-primary" />,
       category: 'Women\'s Health',
       description: 'Uterine Fibroid Embolization (UFE) is a minimally invasive treatment that blocks the blood supply to uterine fibroids, causing them to shrink. This procedure offers an alternative to hysterectomy while preserving the uterus.',
-      duration: '1-2 hours',
-      recovery: '1-2 weeks',
+      duration: '45-60 mins',
+      recovery: '1 week–10 days',
+      setting: 'Overnight Stay',
       benefits: [
         'No surgical incision required',
         'Preserves the uterus',
@@ -296,7 +297,7 @@ export default function ProcedureDetail() {
                 <Info size={24} weight="duotone" className="text-primary" />
                 <h3 className="font-bold text-foreground">Setting</h3>
               </div>
-              <p className="text-2xl font-bold text-primary">Outpatient</p>
+              <p className="text-2xl font-bold text-primary">{procedure.setting || 'Outpatient'}</p>
             </Card>
           </div>
           

@@ -208,8 +208,8 @@ export default function Procedures() {
       description: 'Image-guided minimally invasive cancer treatments including tumor ablation and embolization procedures',
       category: 'Oncology',
       icon: <HeartIcon />,
-      duration: '1-3 hours',
-      recovery: '1-2 weeks'
+      duration: '45-60 mins',
+      recovery: '3-7 Days'
     },
     { 
       id: 4,

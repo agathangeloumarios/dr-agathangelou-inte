@@ -65,8 +65,9 @@ export default function ProcedureDetail() {
       icon: <Sparkle size={64} weight="duotone" className="text-primary" />,
       category: 'Oncology',
       description: 'Interventional oncology encompasses image-guided minimally invasive cancer treatments including tumor ablation, embolization, and targeted drug delivery.',
-      duration: '1-3 hours',
-      recovery: '1-2 weeks',
+      duration: '45-60 mins',
+      recovery: '3-7 Days',
+      setting: 'Outpatient',
       benefits: [
         'Minimally invasive cancer treatment',
         'Precise targeting of tumors',

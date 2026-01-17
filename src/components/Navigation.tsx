@@ -48,12 +48,12 @@ export default function Navigation() {
                 <img 
                   src={logo} 
                   alt="Dr Agathangelou Marios Logo" 
-                  className="h-11 w-auto" 
+                  className="h-16 w-auto" 
                   onError={() => setLogoError(true)}
                 />
               ) : (
-                <div className="h-11 w-11 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Pulse className="text-primary" size={28} weight="bold" />
+                <div className="h-16 w-16 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Pulse className="text-primary" size={36} weight="bold" />
                 </div>
               )}
               <div className="flex flex-col">

@@ -1,18 +1,28 @@
 import { Link } from 'react-router-dom';
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
+import { FacebookLogo, InstagramLogo, LinkedinLogo, Pulse } from '@phosphor-icons/react';
+import { useState } from 'react';
+import logo from '@/assets/images/logo.png';
 
 export default function Footer() {
+  const [logoError, setLogoError] = useState(false);
+  
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center space-y-6">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-              <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L12 22M2 12L22 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-                <circle cx="12" cy="12" r="3" fill="currentColor"/>
-              </svg>
-            </div>
+            {!logoError && logo ? (
+              <img 
+                src={logo} 
+                alt="Dr Agathangelou Marios Logo" 
+                className="h-16 w-auto" 
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                <Pulse className="text-white" size={28} weight="bold" />
+              </div>
+            )}
             <div className="flex flex-col items-start">
               <span className="font-bold text-lg">Dr Agathangelou Marios</span>
               <span className="text-xs text-gray-400">Interventional Radiologist</span>

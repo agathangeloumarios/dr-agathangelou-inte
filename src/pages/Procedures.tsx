@@ -190,8 +190,8 @@ export default function Procedures() {
       description: 'Non-surgical treatment for uterine fibroids using advanced catheter-based techniques to block blood flow to fibroids',
       category: 'Women\'s Health',
       icon: <UterusIcon />,
-      duration: '1-2 hours',
-      recovery: '1-2 weeks'
+      duration: '45-60 mins',
+      recovery: '1 week–10 days'
     },
     { 
       id: 2,

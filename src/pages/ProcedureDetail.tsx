@@ -65,7 +65,7 @@ export default function ProcedureDetail() {
       title: 'Angioplasty and Stenting',
       icon: <Shield size={64} weight="duotone" className="text-primary" />,
       category: 'Vascular',
-      description: 'Angioplasty and stenting is a minimally invasive procedure to open blocked arteries and restore blood flow using balloon dilation and metallic stent placement.',
+      description: 'Angioplasty and stenting is a minimally invasive procedure to open blocked arteries and restore blood flow using balloon dilation and stent placement.',
       duration: '1-2 hours',
       recovery: '1-2 days',
       benefits: [

@@ -59,8 +59,8 @@ export default function BookAppointment() {
     { 
       icon: <Phone size={32} weight="duotone" className="text-primary" />, 
       title: 'Call Us', 
-      value: '+357 25884608',
-      link: 'tel:+35725884608'
+      value: '96 973434 (Nicosia) | +357 25884608 (Limassol)',
+      link: null
     },
     { 
       icon: <EnvelopeSimple size={32} weight="duotone" className="text-primary" />, 
@@ -76,8 +76,8 @@ export default function BookAppointment() {
     },
     { 
       icon: <MapPin size={32} weight="duotone" className="text-primary" />, 
-      title: 'Location', 
-      value: 'YGIA POLYCLINIC - 21 Nafpliou Street, Limassol',
+      title: 'Locations', 
+      value: 'Nicosia: Achaion 22, 1101 | Limassol: 21 Nafpliou St, 3025',
       link: null
     },
   ];
@@ -133,8 +133,15 @@ export default function BookAppointment() {
             ))}
           </div>
           
-          <div className="mb-16">
-            <GoogleMap address="21 Nafpliou Street, 3025 Limassol, Cyprus" />
+          <div className="mb-16 space-y-8">
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Nicosia Location</h3>
+              <GoogleMap address="Achaion 22, Nicosia 1101, Cyprus" />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 text-center">YGIA POLYCLINIC - Limassol Location</h3>
+              <GoogleMap address="21 Nafpliou Street, 3025 Limassol, Cyprus" />
+            </div>
           </div>
           
           <div className="max-w-3xl mx-auto">

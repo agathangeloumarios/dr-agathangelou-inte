@@ -93,14 +93,21 @@ export default function Team() {
                       <MapPin size={20} weight="duotone" className="text-primary mt-0.5 flex-shrink-0" />
                       <div className="space-y-2">
                         <div>
-                          <p className="font-semibold text-foreground">YGIA POLYCLINIC</p>
+                          <p className="font-semibold text-foreground">Nicosia Location</p>
+                          <p className="text-sm">Achaion 22, Nicosia 1101, Cyprus</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground">YGIA POLYCLINIC - Limassol</p>
                           <p className="text-sm">21 Nafpliou Street, 3025 Limassol, Cyprus</p>
                         </div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <Phone size={20} weight="duotone" className="text-primary" />
-                      <a href="tel:+35725884608" className="hover:text-primary transition-colors">+357 25884608</a>
+                    <div className="flex items-start gap-3 text-muted-foreground">
+                      <Phone size={20} weight="duotone" className="text-primary mt-0.5 flex-shrink-0" />
+                      <div className="space-y-1">
+                        <a href="tel:96973434" className="hover:text-primary transition-colors block">96 973434 (Nicosia)</a>
+                        <a href="tel:+35725884608" className="hover:text-primary transition-colors block">+357 25884608 (Limassol)</a>
+                      </div>
                     </div>
                     <div className="flex items-center gap-3 text-muted-foreground">
                       <EnvelopeSimple size={20} weight="duotone" className="text-primary" />

@@ -61,6 +61,8 @@ export default function Footer() {
             <Link to="/procedures" className="text-gray-400 hover:text-white transition-colors">Procedures</Link>
             <span className="text-gray-600">•</span>
             <Link to="/book-appointment" className="text-gray-400 hover:text-white transition-colors">Book</Link>
+            <span className="text-gray-600">•</span>
+            <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy</Link>
           </div>
           
           <div className="pt-8 border-t border-gray-700 w-full">

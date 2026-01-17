@@ -21,10 +21,10 @@
   --background: #FCFBF8;
   --foreground: #262626;
   
-  --card: #FFFFFF;
+  --card: oklch(90.1% 0.076 70.697);
   --card-foreground: #262626;
   
-  --popover: #FFFFFF;
+  --popover: oklch(95.4% 0.038 75.164);
   --popover-foreground: #262626;
   
   --primary: #172435;

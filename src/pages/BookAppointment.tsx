@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { toast } from 'sonner';
 import Footer from '@/components/Footer';
+import GoogleMap from '@/components/GoogleMap';
 
 export default function BookAppointment() {
   const [formData, setFormData] = useState({ 
@@ -130,6 +131,10 @@ export default function BookAppointment() {
                 )}
               </Card>
             ))}
+          </div>
+          
+          <div className="mb-16">
+            <GoogleMap address="Achaion 22, Nicosia, Cyprus" />
           </div>
           
           <div className="max-w-3xl mx-auto">

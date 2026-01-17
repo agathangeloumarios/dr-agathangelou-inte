@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PhotoGallery from '@/components/PhotoGallery';
+import GoogleMap from '@/components/GoogleMap';
 import Footer from '@/components/Footer';
 import drPhoto from '@/assets/images/dr_agathangelou_2.jpeg';
 import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
@@ -341,6 +342,10 @@ export default function Home() {
                 agathangeloumarios@gmail.com
               </a>
             </Card>
+          </div>
+
+          <div className="mb-12">
+            <GoogleMap address="Achaion 22, Nicosia 1101, Cyprus" className="max-w-4xl mx-auto" />
           </div>
 
           <div className="flex flex-col items-center">

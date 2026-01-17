@@ -294,58 +294,118 @@ export default function Home() {
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <MapPin size={28} weight="duotone" className="text-primary" />
-              </div>
-              <h3 className="font-bold text-foreground mb-2 text-base">Address</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Achaion 22<br />
-                Nicosia 1101<br />
-                Cyprus
-              </p>
-            </Card>
-            
-            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <Phone size={28} weight="duotone" className="text-primary" />
-              </div>
-              <h3 className="font-bold text-foreground mb-2 text-base">Phone</h3>
-              <a 
-                href="tel:96973434" 
-                className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
-              >
-                96 973434
-              </a>
-            </Card>
-            
-            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <Clock size={28} weight="duotone" className="text-primary" />
-              </div>
-              <h3 className="font-bold text-foreground mb-2 text-base">Hours</h3>
-              <p className="text-sm text-muted-foreground">
-                Open 24 hours
-              </p>
-            </Card>
-            
-            <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <EnvelopeSimple size={28} weight="duotone" className="text-primary" />
-              </div>
-              <h3 className="font-bold text-foreground mb-2 text-base">Email</h3>
-              <a 
-                href="mailto:agathangeloumarios@gmail.com" 
-                className="text-muted-foreground hover:text-primary transition-colors break-all text-xs"
-              >
-                agathangeloumarios@gmail.com
-              </a>
-            </Card>
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Nicosia Location</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <MapPin size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Address</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Achaion 22<br />
+                  Nicosia 1101<br />
+                  Cyprus
+                </p>
+              </Card>
+              
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <Phone size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Phone</h3>
+                <a 
+                  href="tel:96973434" 
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
+                >
+                  96 973434
+                </a>
+              </Card>
+              
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <Clock size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Hours</h3>
+                <p className="text-sm text-muted-foreground">
+                  Open 24 hours
+                </p>
+              </Card>
+              
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <EnvelopeSimple size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Email</h3>
+                <a 
+                  href="mailto:agathangeloumarios@gmail.com" 
+                  className="text-muted-foreground hover:text-primary transition-colors break-all text-xs"
+                >
+                  agathangeloumarios@gmail.com
+                </a>
+              </Card>
+            </div>
+
+            <div className="mb-12">
+              <GoogleMap address="Achaion 22, Nicosia 1101, Cyprus" className="max-w-4xl mx-auto" />
+            </div>
           </div>
 
           <div className="mb-12">
-            <GoogleMap address="Achaion 22, Nicosia 1101, Cyprus" className="max-w-4xl mx-auto" />
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">YGIA POLYCLINIC - Limassol Location</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <MapPin size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Address</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  21 Nafpliou Street<br />
+                  3025 Limassol<br />
+                  Cyprus
+                </p>
+              </Card>
+              
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <Phone size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Phone</h3>
+                <a 
+                  href="tel:+35725884608" 
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
+                >
+                  +357 25884608
+                </a>
+              </Card>
+              
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <Clock size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Hours</h3>
+                <p className="text-sm text-muted-foreground">
+                  Open 24 hours
+                </p>
+              </Card>
+              
+              <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-primary/30">
+                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <EnvelopeSimple size={28} weight="duotone" className="text-primary" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2 text-base">Email</h3>
+                <a 
+                  href="mailto:agathangeloumarios@gmail.com" 
+                  className="text-muted-foreground hover:text-primary transition-colors break-all text-xs"
+                >
+                  agathangeloumarios@gmail.com
+                </a>
+              </Card>
+            </div>
+
+            <div className="mb-12">
+              <GoogleMap address="21 Nafpliou Street, 3025 Limassol, Cyprus" className="max-w-4xl mx-auto" />
+            </div>
           </div>
 
           <div className="flex flex-col items-center">

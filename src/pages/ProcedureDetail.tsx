@@ -36,8 +36,80 @@ export default function ProcedureDetail() {
       idealCandidates: 'Women with symptomatic fibroids who wish to avoid surgery or preserve fertility options.'
     },
     '2': { 
-      title: 'Varicose Vein Treatment',
+      title: 'Angioplasty and Stenting',
+      icon: <Shield size={64} weight="duotone" className="text-primary" />,
+      category: 'Vascular',
+      description: 'Angioplasty and stenting is a minimally invasive procedure to open blocked arteries and restore blood flow using balloon dilation and metallic stent placement.',
+      duration: '1-2 hours',
+      recovery: '1-2 days',
+      benefits: [
+        'No open surgery required',
+        'Immediate blood flow improvement',
+        'Quick recovery time',
+        'Local anesthesia only',
+        'Same-day or next-day discharge'
+      ],
+      process: [
+        'Catheter inserted via wrist or groin',
+        'Guided to blocked artery using imaging',
+        'Balloon inflated to open blockage',
+        'Stent placed to keep artery open',
+        'Blood flow immediately restored'
+      ],
+      whatToExpect: 'Most patients resume normal activities within a few days. Blood thinning medications prescribed to prevent clotting.',
+      idealCandidates: 'Patients with arterial blockages causing poor circulation, leg pain, or risk of stroke.'
+    },
+    '3': { 
+      title: 'Interventional Oncology',
+      icon: <Sparkle size={64} weight="duotone" className="text-primary" />,
+      category: 'Oncology',
+      description: 'Interventional oncology encompasses image-guided minimally invasive cancer treatments including tumor ablation, embolization, and targeted drug delivery.',
+      duration: '1-3 hours',
+      recovery: '1-2 weeks',
+      benefits: [
+        'Minimally invasive cancer treatment',
+        'Precise targeting of tumors',
+        'Preserves healthy tissue',
+        'Can be repeated if needed',
+        'Alternative when surgery not possible'
+      ],
+      process: [
+        'CT or ultrasound guidance for precise targeting',
+        'Thin probe or catheter inserted',
+        'Treatment delivered directly to tumor',
+        'Real-time imaging monitors procedure',
+        'Duration varies by tumor type and size'
+      ],
+      whatToExpect: 'Same-day or next-day discharge typical. Mild discomfort at site resolves quickly. Follow-up imaging monitors treatment response.',
+      idealCandidates: 'Patients with tumors in liver, kidney, lung, or bone who need alternatives to traditional surgery.'
+    },
+    '4': { 
+      title: 'Minimally Invasive Pain Treatment',
       icon: <Heart size={64} weight="duotone" className="text-primary" />,
+      category: 'Pain Management',
+      description: 'Advanced image-guided pain management procedures including nerve blocks, epidural injections, and targeted ablations for chronic pain relief.',
+      duration: '30-60 minutes',
+      recovery: '1-3 days',
+      benefits: [
+        'Targeted pain relief',
+        'Minimal recovery time',
+        'Outpatient procedure',
+        'Reduced medication dependence',
+        'High success rate'
+      ],
+      process: [
+        'Precise imaging guides needle placement',
+        'Local anesthetic applied',
+        'Treatment delivered to pain source',
+        'Immediate or gradual pain relief',
+        'Can be repeated as needed'
+      ],
+      whatToExpect: 'Most patients experience pain relief within days. Some procedures provide immediate relief while others take 1-2 weeks.',
+      idealCandidates: 'Patients with chronic back pain, joint pain, or nerve-related pain not responding to conservative treatment.'
+    },
+    '5': { 
+      title: 'Varicose Veins Treatment',
+      icon: <TrendUp size={64} weight="duotone" className="text-primary" />,
       category: 'Vascular',
       description: 'Modern varicose vein treatment uses endovenous laser or radiofrequency ablation to close diseased veins from inside, eliminating the need for vein stripping surgery.',
       duration: '30-60 minutes',
@@ -59,173 +131,77 @@ export default function ProcedureDetail() {
       whatToExpect: 'Resume normal activities immediately. Some bruising and mild discomfort may occur but typically resolves within a week.',
       idealCandidates: 'Patients with symptomatic varicose veins, leg pain, swelling, or cosmetic concerns.'
     },
-    '3': { 
-      title: 'Prostate Artery Embolization',
-      icon: <Shield size={64} weight="duotone" className="text-primary" />,
-      category: 'Men\'s Health',
-      description: 'Prostate Artery Embolization (PAE) treats enlarged prostate by blocking blood flow to prostate tissue, causing it to shrink and relieving urinary symptoms.',
-      duration: '2-3 hours',
-      recovery: '1-2 weeks',
-      benefits: [
-        'Preserves sexual function',
-        'No general anesthesia needed',
-        'Short recovery period',
-        'Effective symptom relief',
-        'Lower complication rate than surgery'
-      ],
-      process: [
-        'Catheter inserted via wrist or groin',
-        'Guided to prostate arteries',
-        'Tiny particles injected to reduce blood flow',
-        'Prostate shrinks over several weeks',
-        'Same-day or overnight stay'
-      ],
-      whatToExpect: 'Urinary symptoms improve gradually over 4-12 weeks. Most patients discharged same day and return to activities within a week.',
-      idealCandidates: 'Men with BPH symptoms who want to avoid surgery or have contraindications to traditional treatments.'
-    },
-    '4': { 
-      title: 'Vertebroplasty & Kyphoplasty',
-      icon: <TrendUp size={64} weight="duotone" className="text-primary" />,
-      category: 'Spine',
-      description: 'These procedures stabilize spinal compression fractures by injecting bone cement into damaged vertebrae, providing immediate pain relief and preventing further collapse.',
-      duration: '1 hour',
-      recovery: '1-3 days',
-      benefits: [
-        'Rapid pain relief within hours',
-        'Stabilizes fractured vertebrae',
-        'Minimal recovery time',
-        'Outpatient procedure',
-        'Improved mobility'
-      ],
-      process: [
-        'Conscious sedation or local anesthesia',
-        'Hollow needle inserted into vertebra',
-        'Medical-grade bone cement injected',
-        'Cement hardens in minutes',
-        'Usually done in under an hour'
-      ],
-      whatToExpect: 'Most patients experience significant pain relief within 24-48 hours. Light activity can resume within days.',
-      idealCandidates: 'Patients with painful compression fractures due to osteoporosis, trauma, or cancer.'
-    },
-    '5': { 
-      title: 'Tumor Ablation',
-      icon: <Sparkle size={64} weight="duotone" className="text-primary" />,
-      category: 'Oncology',
-      description: 'Image-guided tumor ablation destroys cancer cells using extreme heat (radiofrequency/microwave) or cold (cryoablation) delivered through a small probe.',
-      duration: '1-3 hours',
-      recovery: '1-2 weeks',
-      benefits: [
-        'Minimally invasive cancer treatment',
-        'Precise targeting of tumors',
-        'Preserves healthy tissue',
-        'Can be repeated if needed',
-        'Alternative when surgery not possible'
-      ],
-      process: [
-        'CT or ultrasound guidance for probe placement',
-        'Thin probe inserted through skin',
-        'Energy delivered to destroy tumor',
-        'Real-time imaging monitors treatment',
-        'Duration varies by tumor size'
-      ],
-      whatToExpect: 'Same-day or next-day discharge typical. Mild discomfort at site resolves quickly. Follow-up imaging monitors treatment response.',
-      idealCandidates: 'Patients with small to medium tumors in liver, kidney, lung, or bone who are not surgical candidates.'
-    },
     '6': { 
-      title: 'Dialysis Access Management',
+      title: 'Ablation of Thyroid Nodules',
       icon: <Pulse size={64} weight="duotone" className="text-primary" />,
-      category: 'Vascular',
-      description: 'Creation and maintenance of arteriovenous fistulas and grafts for hemodialysis, ensuring reliable vascular access for kidney disease patients.',
-      duration: '1-2 hours',
-      recovery: '2-4 weeks',
-      benefits: [
-        'Minimally invasive approach',
-        'Quick fistula maturation',
-        'Extended access longevity',
-        'Fewer complications',
-        'Outpatient procedure'
-      ],
-      process: [
-        'Comprehensive vascular assessment',
-        'Fistula or graft creation',
-        'Image-guided technique',
-        'Regular maintenance and monitoring',
-        'Prompt treatment of complications'
-      ],
-      whatToExpect: 'Fistula typically ready for use in 6-12 weeks after maturation. Regular monitoring ensures long-term function.',
-      idealCandidates: 'Patients with kidney failure requiring hemodialysis or those with failing dialysis access.'
-    },
-    '7': { 
-      title: 'Liver & Kidney Biopsies',
-      icon: <CheckCircle size={64} weight="duotone" className="text-primary" />,
-      category: 'Diagnostic',
-      description: 'Image-guided tissue sampling using ultrasound or CT guidance provides accurate diagnosis of liver and kidney diseases with minimal risk.',
-      duration: '30 minutes',
-      recovery: '24 hours',
-      benefits: [
-        'Accurate tissue diagnosis',
-        'Real-time imaging guidance',
-        'Minimal discomfort',
-        'Quick procedure',
-        'Low complication rate'
-      ],
-      process: [
-        'Ultrasound or CT identifies target',
-        'Local anesthesia applied',
-        'Thin needle inserted to collect tissue',
-        'Sample sent for analysis',
-        'Observation period post-procedure'
-      ],
-      whatToExpect: 'Brief observation period after biopsy. Resume normal activities the next day. Results typically available within a week.',
-      idealCandidates: 'Patients requiring tissue diagnosis for liver or kidney disease evaluation.'
-    },
-    '8': { 
-      title: 'Port-a-Cath Placement',
-      icon: <Heart size={64} weight="duotone" className="text-primary" />,
-      category: 'Access',
-      description: 'Implantable port placement provides long-term central venous access for chemotherapy, antibiotics, or parenteral nutrition delivery.',
+      category: 'Endocrine',
+      description: 'Radiofrequency or microwave ablation of thyroid nodules offers a non-surgical alternative for treating benign and selected malignant thyroid nodules.',
       duration: '30-60 minutes',
       recovery: '1-2 days',
       benefits: [
-        'Long-term reliable access',
-        'Reduced needle sticks',
-        'Can shower/swim normally',
-        'Minimal visible profile',
+        'No surgical scar',
+        'Preserves thyroid function',
+        'Local anesthesia only',
+        'Quick recovery',
         'Outpatient procedure'
       ],
       process: [
-        'Ultrasound-guided vein access',
-        'Port implanted beneath skin',
-        'Catheter threaded to large vein',
-        'Fluoroscopy confirms position',
-        'Ready for use immediately'
+        'Ultrasound guidance for precise targeting',
+        'Local anesthesia applied to neck',
+        'Thin electrode inserted into nodule',
+        'Heat energy destroys nodule tissue',
+        'Nodule shrinks over following months'
       ],
-      whatToExpect: 'Mild soreness at implant site for a few days. Port can be used immediately for medication delivery.',
-      idealCandidates: 'Cancer patients requiring chemotherapy or others needing long-term IV access.'
+      whatToExpect: 'Mild neck discomfort for 1-2 days. Normal activities resume next day. Nodule volume reduction visible over 3-6 months.',
+      idealCandidates: 'Patients with benign thyroid nodules causing symptoms or cosmetic concerns who wish to avoid surgery.'
     },
-    '9': { 
-      title: 'Embolization Procedures',
-      icon: <Shield size={64} weight="duotone" className="text-primary" />,
-      category: 'Vascular',
-      description: 'Catheter-based treatment to block blood vessels, used for controlling bleeding, treating tumors, aneurysms, and vascular malformations.',
-      duration: '1-3 hours',
-      recovery: '1-2 weeks',
+    '7': { 
+      title: 'Varicocele Embolization',
+      icon: <CheckCircle size={64} weight="duotone" className="text-primary" />,
+      category: 'Men\'s Health',
+      description: 'Varicocele embolization is a minimally invasive catheter-based procedure that blocks abnormal veins in the scrotum to improve fertility and relieve discomfort.',
+      duration: '1 hour',
+      recovery: '1-2 days',
       benefits: [
-        'Stops bleeding without surgery',
-        'Treats various conditions',
-        'Preserves organ function',
-        'Minimally invasive',
-        'Effective pain relief'
+        'No surgical incision',
+        'Faster recovery than surgery',
+        'Improves sperm quality',
+        'Relieves testicular pain',
+        'Same-day procedure'
       ],
       process: [
-        'Catheter inserted through artery',
-        'Guided to target blood vessel',
-        'Embolic agents delivered',
-        'Blood flow blocked or reduced',
-        'Imaging confirms treatment'
+        'Catheter inserted via neck or groin vein',
+        'Guided to testicular veins using X-ray',
+        'Coils or agents block abnormal veins',
+        'Normal venous drainage restored',
+        'Procedure takes about 60 minutes'
       ],
-      whatToExpect: 'Recovery varies by condition treated. Many patients discharged same or next day. Symptoms improve gradually over weeks.',
-      idealCandidates: 'Patients with bleeding, tumors, aneurysms, or vascular malformations requiring blood flow reduction.'
+      whatToExpect: 'Resume normal activities within 1-2 days. Sperm quality improvement typically seen within 3-6 months.',
+      idealCandidates: 'Men with varicoceles causing infertility, testicular pain, or testicular atrophy.'
+    },
+    '8': { 
+      title: 'Breast Cryotherapy',
+      icon: <Heart size={64} weight="duotone" className="text-primary" />,
+      category: 'Women\'s Health',
+      description: 'Breast cryotherapy uses extreme cold to freeze and destroy abnormal breast tissue, offering a minimally invasive treatment for selected breast lesions.',
+      duration: '1-2 hours',
+      recovery: '1-2 weeks',
+      benefits: [
+        'Minimal scarring',
+        'Preserves breast appearance',
+        'Quick procedure',
+        'Local anesthesia only',
+        'Outpatient treatment'
+      ],
+      process: [
+        'Ultrasound or MRI guidance for targeting',
+        'Small probe inserted through skin',
+        'Extreme cold freezes lesion',
+        'Ice ball monitored in real-time',
+        'Frozen tissue naturally absorbed'
+      ],
+      whatToExpect: 'Mild bruising and swelling for 1-2 weeks. Normal activities resume within days. Treated tissue absorbed over several months.',
+      idealCandidates: 'Patients with small benign breast lesions or selected early-stage cancers who prefer minimally invasive treatment.'
     },
   };
 

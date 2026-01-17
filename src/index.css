@@ -27,17 +27,17 @@
   --popover: #FFFFFF;
   --popover-foreground: #262626;
   
-  --primary: #0d9488;
-  --primary-foreground: #FFFFFF;
+  --primary: #B69270;
+  --primary-foreground: #9D8973;
   
-  --secondary: #8DD3BB;
-  --secondary-foreground: #262626;
+  --secondary: oklch(50.5% 0.213 27.518);
+  --secondary-foreground: oklch(49.1% 0.27 292.581);
   
   --muted: #F3F4F6;
   --muted-foreground: #6B7280;
   
   --accent: #f59e0c;
-  --accent-foreground: #FFFFFF;
+  --accent-foreground: oklch(89.7% 0.196 126.665);
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;

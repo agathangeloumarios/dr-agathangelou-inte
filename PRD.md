@@ -79,18 +79,19 @@ A professional single-page website for Dr. Agathangelou Marios, an Interventiona
 The design should evoke cutting-edge medical precision, trustworthiness, and calm professionalism. Clean lines, generous white space, and a sophisticated color palette create an atmosphere of modern healthcare excellence. Subtle animations suggest advanced technology while maintaining the gravitas appropriate for medical services.
 
 ## Color Selection
-Professional medical palette with teal primary, warm accent colors, and high-contrast neutrals.
+Professional medical palette with teal primary, warm accent colors, and high-contrast neutrals using hex codes.
 
-- **Primary Color**: Teal (#0d9488 / oklch(0.57 0.10 192)) - Medical professionalism, trust, precision, innovation
+- **Primary Color**: Teal (#0d9488) - Medical professionalism, trust, precision, innovation
 - **Secondary Colors**: 
-  - Amber (#f59e0c / oklch(0.71 0.15 70)) - Warmth, optimism, attention for CTAs
-  - Purple (#a855f7 / oklch(0.62 0.24 295)) - Innovation, specialization highlights
+  - Mint Green (#8DD3BB) - Supporting color for secondary actions
+  - Purple (#a855f7) - Innovation, specialization highlights
 - **Accent Color**: Warm Amber (#f59e0c) - Call-to-action buttons, important highlights
+- **Navigation/Footer**: Dark Navy (#172435) - Professional header and footer backgrounds
 - **Foreground/Background Pairings**: 
-  - Background White (#fafafa): Dark Gray text (#262626) - Ratio 14.2:1 ✓
-  - Teal Primary (#0d9488): White text (#fafafa) - Ratio 4.6:1 ✓
-  - Amber Accent (#f59e0c): White text (#fafafa) - Ratio 5.8:1 ✓
-  - Purple Accent (#a855f7): White text (#fafafa) - Ratio 5.2:1 ✓
+  - Background Warm White (#FCFBF8): Dark Gray text (#262626) - Ratio 13.8:1 ✓
+  - Teal Primary (#0d9488): White text (#FFFFFF) - Ratio 4.6:1 ✓
+  - Amber Accent (#f59e0c): White text (#FFFFFF) - Ratio 5.8:1 ✓
+  - Dark Navy (#172435): White text (#FFFFFF) - Ratio 13.2:1 ✓
 
 ## Font Selection
 Typography should convey modern medical authority with excellent readability. Primary typeface is clean and contemporary for professional credibility; headings are bold and commanding to establish hierarchy.

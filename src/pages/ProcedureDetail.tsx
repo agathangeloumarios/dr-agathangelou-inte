@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import Footer from '@/components/Footer';
-import performingProcedure from '@/assets/images/Performing_procedures_1.jpg';
+import performingProcedure from '@/assets/images/modern_operation_theater_3.jpeg';
 
 export default function ProcedureDetail() {
   const { id } = useParams();

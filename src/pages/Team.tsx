@@ -89,13 +89,18 @@ export default function Team() {
                   <Separator className="my-6" />
                   
                   <div className="space-y-4">
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <MapPin size={20} weight="duotone" className="text-primary" />
-                      <span>Nicosia, Cyprus</span>
+                    <div className="flex items-start gap-3 text-muted-foreground">
+                      <MapPin size={20} weight="duotone" className="text-primary mt-0.5 flex-shrink-0" />
+                      <div className="space-y-2">
+                        <div>
+                          <p className="font-semibold text-foreground">YGIA POLYCLINIC</p>
+                          <p className="text-sm">21 Nafpliou Street, 3025 Limassol, Cyprus</p>
+                        </div>
+                      </div>
                     </div>
                     <div className="flex items-center gap-3 text-muted-foreground">
                       <Phone size={20} weight="duotone" className="text-primary" />
-                      <a href="tel:96973434" className="hover:text-primary transition-colors">96 973434</a>
+                      <a href="tel:+35725884608" className="hover:text-primary transition-colors">+357 25884608</a>
                     </div>
                     <div className="flex items-center gap-3 text-muted-foreground">
                       <EnvelopeSimple size={20} weight="duotone" className="text-primary" />

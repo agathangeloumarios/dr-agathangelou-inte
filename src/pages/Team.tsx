@@ -53,7 +53,7 @@ export default function Team() {
           </Badge>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground tracking-tight">
-            Meet Dr. Agathangelou Marios
+            Meet Dr Agathangelou Marios
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -72,7 +72,7 @@ export default function Team() {
                 <div className="aspect-square bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10 overflow-hidden relative">
                   <img 
                     src={drPhoto2} 
-                    alt="Dr. Agathangelou Marios" 
+                    alt="Dr Agathangelou Marios" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
@@ -80,7 +80,7 @@ export default function Team() {
                 
                 <div className="p-8 bg-gradient-to-br from-white to-muted/20">
                   <h2 className="text-3xl font-bold text-foreground mb-2">
-                    Dr. Agathangelou Marios
+                    Dr Agathangelou Marios
                   </h2>
                   <p className="text-primary font-semibold text-lg mb-6">
                     MD MSc | Interventional Radiologist
@@ -110,10 +110,10 @@ export default function Team() {
             
             <div className="lg:col-span-3 space-y-8">
               <div>
-                <h3 className="text-3xl font-bold text-foreground mb-6">About Dr. Agathangelou Marios</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-6">About Dr Agathangelou Marios</h3>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Dr. Agathangelou Marios is a highly skilled <span className="font-semibold text-foreground">interventional radiologist</span> with extensive experience in minimally invasive procedures. His expertise spans a wide range of image-guided treatments, from vascular interventions to complex tumor ablations.
+                    Dr Agathangelou Marios is a highly skilled <span className="font-semibold text-foreground">interventional radiologist</span> with extensive experience in minimally invasive procedures. His expertise spans a wide range of image-guided treatments, from vascular interventions to complex tumor ablations.
                   </p>
                   <p>
                     With a commitment to <span className="font-semibold text-foreground">patient-centered care</span>, Dr. Agathangelou combines cutting-edge technology with compassionate treatment, ensuring each patient receives personalized attention and optimal outcomes.
@@ -169,15 +169,15 @@ export default function Team() {
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Professional Gallery</h3>
             <p className="text-lg text-muted-foreground">
-              Dr. Agathangelou in practice, performing advanced interventional procedures
+              Dr Agathangelou in practice, performing advanced interventional procedures
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
           
           <PhotoGallery 
             photos={[
-              { src: drPhoto1, alt: 'Dr. Agathangelou performing procedure', title: 'Advanced Interventional Procedure' },
-              { src: performingProcedure3, alt: 'Dr. Agathangelou performing procedures', title: 'Precision Medical Care' },
+              { src: drPhoto1, alt: 'Dr Agathangelou performing procedure', title: 'Advanced Interventional Procedure' },
+              { src: performingProcedure3, alt: 'Dr Agathangelou performing procedures', title: 'Precision Medical Care' },
               { src: drPhotoClarivein, alt: 'Clarivein procedure', title: 'Clarivein Vein Treatment' }
             ]}
             columns={3}

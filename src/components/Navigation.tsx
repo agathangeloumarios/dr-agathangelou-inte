@@ -47,7 +47,7 @@ export default function Navigation() {
               {!logoError && logo ? (
                 <img 
                   src={logo} 
-                  alt="Dr. Agathangelou Marios Logo" 
+                  alt="Dr Agathangelou Marios Logo" 
                   className="h-11 w-auto" 
                   onError={() => setLogoError(true)}
                 />

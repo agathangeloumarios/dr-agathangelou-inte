@@ -10,7 +10,7 @@ export default function Testimonials() {
     { 
       name: 'Maria K.', 
       procedure: 'Uterine Fibroid Embolization', 
-      text: 'Dr. Agathangelou provided exceptional care throughout my entire treatment journey. The procedure was quick, surprisingly painless, and my recovery was remarkably smooth. I was back to my normal routine within a week. I highly recommend his expertise to anyone considering this treatment!', 
+      text: 'Dr Agathangelou provided exceptional care throughout my entire treatment journey. The procedure was quick, surprisingly painless, and my recovery was remarkably smooth. I was back to my normal routine within a week. I highly recommend his expertise to anyone considering this treatment!', 
       rating: 5, 
       date: 'December 2024',
       location: 'Nicosia'
@@ -18,7 +18,7 @@ export default function Testimonials() {
     { 
       name: 'John P.', 
       procedure: 'Prostate Artery Embolization', 
-      text: 'Professional, caring, and highly skilled. Dr. Agathangelou took the time to thoroughly explain every step of the procedure and answered all my questions with patience. The results have been life-changing, and I couldn\'t be more satisfied with the care I received.', 
+      text: 'Professional, caring, and highly skilled. Dr Agathangelou took the time to thoroughly explain every step of the procedure and answered all my questions with patience. The results have been life-changing, and I couldn\'t be more satisfied with the care I received.', 
       rating: 5, 
       date: 'November 2024',
       location: 'Limassol'
@@ -26,7 +26,7 @@ export default function Testimonials() {
     { 
       name: 'Elena S.', 
       procedure: 'Varicose Vein Treatment', 
-      text: 'Life-changing treatment with minimal downtime! I was amazed at how quick and easy the procedure was. The results exceeded my expectations, and I love how my legs look now. Thank you Dr. Agathangelou for giving me my confidence back!', 
+      text: 'Life-changing treatment with minimal downtime! I was amazed at how quick and easy the procedure was. The results exceeded my expectations, and I love how my legs look now. Thank you Dr Agathangelou for giving me my confidence back!', 
       rating: 5, 
       date: 'October 2024',
       location: 'Nicosia'
@@ -34,7 +34,7 @@ export default function Testimonials() {
     { 
       name: 'Andreas M.', 
       procedure: 'Vertebroplasty', 
-      text: 'After years of debilitating back pain, I finally found relief through Dr. Agathangelou\'s expertise. The procedure was quick, and I felt improvement almost immediately. Excellent care from start to finish. I wish I had done this sooner!', 
+      text: 'After years of debilitating back pain, I finally found relief through Dr Agathangelou\'s expertise. The procedure was quick, and I felt improvement almost immediately. Excellent care from start to finish. I wish I had done this sooner!', 
       rating: 5, 
       date: 'September 2024',
       location: 'Larnaca'
@@ -42,7 +42,7 @@ export default function Testimonials() {
     { 
       name: 'Christina L.', 
       procedure: 'Tumor Ablation', 
-      text: 'Dr. Agathangelou and his team were incredible throughout my treatment. Their professionalism, compassion, and expertise gave me confidence during a difficult time. The minimally invasive approach made such a difference in my recovery. Forever grateful!', 
+      text: 'Dr Agathangelou and his team were incredible throughout my treatment. Their professionalism, compassion, and expertise gave me confidence during a difficult time. The minimally invasive approach made such a difference in my recovery. Forever grateful!', 
       rating: 5, 
       date: 'August 2024',
       location: 'Paphos'
@@ -50,7 +50,7 @@ export default function Testimonials() {
     { 
       name: 'Dimitris N.', 
       procedure: 'Dialysis Access Management', 
-      text: 'Outstanding service and exceptional results. The entire process was explained clearly, and the procedure went smoothly. Dr. Agathangelou\'s skill and attention to detail made all the difference. My access is working perfectly!', 
+      text: 'Outstanding service and exceptional results. The entire process was explained clearly, and the procedure went smoothly. Dr Agathangelou\'s skill and attention to detail made all the difference. My access is working perfectly!', 
       rating: 5, 
       date: 'July 2024',
       location: 'Nicosia'
@@ -58,7 +58,7 @@ export default function Testimonials() {
     { 
       name: 'Sofia A.', 
       procedure: 'Port-a-Cath Placement', 
-      text: 'Dr. Agathangelou made what could have been a stressful procedure completely manageable. He was gentle, efficient, and extremely professional. The port works perfectly and has made my chemotherapy treatments much easier. Thank you!', 
+      text: 'Dr Agathangelou made what could have been a stressful procedure completely manageable. He was gentle, efficient, and extremely professional. The port works perfectly and has made my chemotherapy treatments much easier. Thank you!', 
       rating: 5, 
       date: 'June 2024',
       location: 'Limassol'
@@ -66,7 +66,7 @@ export default function Testimonials() {
     { 
       name: 'George T.', 
       procedure: 'Liver Biopsy', 
-      text: 'I was nervous about the biopsy, but Dr. Agathangelou\'s calm demeanor and clear explanations put me at ease. The procedure was quick and virtually painless. Results were accurate and helped guide my treatment perfectly.', 
+      text: 'I was nervous about the biopsy, but Dr Agathangelou\'s calm demeanor and clear explanations put me at ease. The procedure was quick and virtually painless. Results were accurate and helped guide my treatment perfectly.', 
       rating: 5, 
       date: 'May 2024',
       location: 'Nicosia'
@@ -74,7 +74,7 @@ export default function Testimonials() {
     { 
       name: 'Anna P.', 
       procedure: 'Embolization Procedure', 
-      text: 'Exceptional medical care from an exceptional doctor. Dr. Agathangelou\'s expertise and modern approach to treatment made all the difference. I experienced minimal discomfort and recovered quickly. Highly recommended!', 
+      text: 'Exceptional medical care from an exceptional doctor. Dr Agathangelou\'s expertise and modern approach to treatment made all the difference. I experienced minimal discomfort and recovered quickly. Highly recommended!', 
       rating: 5, 
       date: 'April 2024',
       location: 'Larnaca'

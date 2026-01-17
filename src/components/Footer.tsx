@@ -67,7 +67,7 @@ export default function Footer() {
           
           <div className="pt-8 border-t border-gray-700 w-full">
             <p className="text-gray-400 text-sm">
-              © 2025 Dr. Agathangelou Marios. All rights reserved.
+              © 2025 Dr Agathangelou Marios. All rights reserved.
             </p>
           </div>
         </div>

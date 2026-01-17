@@ -52,19 +52,19 @@ export default function Home() {
   const testimonials = [
     { 
       name: 'Maria K.', 
-      text: 'Dr. Agathangelou provided exceptional care throughout my treatment. The procedure was quick, painless, and my recovery was remarkably smooth. I highly recommend his expertise!', 
+      text: 'Dr Agathangelou provided exceptional care throughout my treatment. The procedure was quick, painless, and my recovery was remarkably smooth. I highly recommend his expertise!', 
       rating: 5,
       procedure: 'Fibroid Treatment'
     },
     { 
       name: 'John P.', 
-      text: 'Professional, caring, and highly skilled. Dr. Agathangelou took the time to explain everything clearly and made me feel comfortable. The results exceeded my expectations.', 
+      text: 'Professional, caring, and highly skilled. Dr Agathangelou took the time to explain everything clearly and made me feel comfortable. The results exceeded my expectations.', 
       rating: 5,
       procedure: 'Vascular Treatment'
     },
     { 
       name: 'Elena S.', 
-      text: 'Life-changing treatment with minimal downtime. I was back to my normal routine within days. Thank you Dr. Agathangelou for your incredible work!', 
+      text: 'Life-changing treatment with minimal downtime. I was back to my normal routine within days. Thank you Dr Agathangelou for your incredible work!', 
       rating: 5,
       procedure: 'Pain Management'
     },
@@ -161,7 +161,7 @@ export default function Home() {
               <div className="relative h-96 overflow-hidden">
                 <img 
                   src={drPhoto} 
-                  alt="Dr. Agathangelou Marios - Interventional Radiologist" 
+                  alt="Dr Agathangelou Marios - Interventional Radiologist" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   onError={(e) => {

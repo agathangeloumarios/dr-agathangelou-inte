@@ -100,7 +100,7 @@ export default function BookAppointment() {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Schedule your consultation with Dr. Agathangelou Marios to discuss your treatment options
+            Schedule your consultation with Dr Agathangelou Marios to discuss your treatment options
           </p>
           
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />

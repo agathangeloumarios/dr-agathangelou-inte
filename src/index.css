@@ -18,43 +18,43 @@
 }
 
 :root {
-  --background: oklch(0.98 0.01 180);
-  --foreground: oklch(0.15 0.02 240);
+  --background: oklch(0.94 0.04 85);
+  --foreground: oklch(0.25 0.05 235);
   
-  --card: oklch(0.99 0.005 180);
-  --card-foreground: oklch(0.15 0.02 240);
+  --card: oklch(0.96 0.03 85);
+  --card-foreground: oklch(0.25 0.05 235);
   
-  --popover: oklch(1.00 0 0);
-  --popover-foreground: oklch(0.15 0.02 240);
+  --popover: oklch(0.96 0.03 85);
+  --popover-foreground: oklch(0.25 0.05 235);
   
-  --primary: oklch(0.65 0.20 160);
-  --primary-foreground: oklch(0.98 0.01 180);
+  --primary: oklch(0.25 0.08 235);
+  --primary-foreground: oklch(0.94 0.04 85);
   
-  --secondary: oklch(0.92 0.08 200);
-  --secondary-foreground: oklch(0.20 0.05 240);
+  --secondary: oklch(0.68 0.08 60);
+  --secondary-foreground: oklch(0.98 0.01 85);
   
-  --muted: oklch(0.94 0.02 180);
-  --muted-foreground: oklch(0.45 0.02 240);
+  --muted: oklch(0.68 0.08 60);
+  --muted-foreground: oklch(0.25 0.05 235);
   
-  --accent: oklch(0.75 0.15 280);
-  --accent-foreground: oklch(0.15 0.02 240);
+  --accent: oklch(0.67 0.14 210);
+  --accent-foreground: oklch(0.98 0.01 85);
   
   --destructive: oklch(0.65 0.20 25);
   --destructive-foreground: oklch(0.98 0.01 180);
   
-  --border: oklch(0.88 0.02 180);
-  --input: oklch(0.88 0.02 180);
-  --ring: oklch(0.65 0.20 160);
+  --border: oklch(0.68 0.08 60);
+  --input: oklch(0.68 0.08 60);
+  --ring: oklch(0.67 0.14 210);
   
-  --purple: #a855f7;
-  --purple-foreground: #FFFFFF;
+  --teal: oklch(0.55 0.10 195);
+  --teal-foreground: oklch(0.98 0.01 85);
   
-  --gradient-1: #FF6B6B;
-  --gradient-2: #4ECDC4;
-  --gradient-3: #45B7D1;
-  --gradient-4: #FFA07A;
-  --gradient-5: #98D8C8;
-  --gradient-6: #F7DC6F;
+  --gradient-1: #EBD1A8;
+  --gradient-2: #B69270;
+  --gradient-3: #0A2342;
+  --gradient-4: #06AED5;
+  --gradient-5: #1D7874;
+  --gradient-6: #68B0AB;
   
   --radius: 0.75rem;
   
@@ -124,8 +124,8 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   
-  --color-purple: var(--purple);
-  --color-purple-foreground: var(--purple-foreground);
+  --color-teal: var(--teal);
+  --color-teal-foreground: var(--teal-foreground);
   
   --color-gradient-1: var(--gradient-1);
   --color-gradient-2: var(--gradient-2);

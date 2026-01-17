@@ -4,11 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Footer from '@/components/Footer';
-
-const img1456 = '/src/assets/images/IMG_1456.JPG';
-const img1613 = '/src/assets/images/IMG_1613.JPG';
-const pelvisIliac5 = '/src/assets/images/Pelvis-Iliac5_3_fps.jpg';
-const pelvisIliac11 = '/src/assets/images/Pelvis-Iliac11_3_fps.jpg';
+import img1456 from '@/assets/images/IMG_1456.JPG';
+import img1613 from '@/assets/images/IMG_1613.JPG';
+import pelvisIliac5 from '@/assets/images/Pelvis-Iliac5_3_fps.jpg';
+import pelvisIliac11 from '@/assets/images/Pelvis-Iliac11_3_fps.jpg';
 
 const UterusIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

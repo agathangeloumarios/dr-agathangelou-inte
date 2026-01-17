@@ -7,15 +7,14 @@ import { Separator } from '@/components/ui/separator';
 import Footer from '@/components/Footer';
 import BeforeAfterGallery from '@/components/BeforeAfterGallery';
 import performingProcedure from '@/assets/images/modern_operation_theater_3.jpeg';
-
-const img1456 = '/src/assets/images/IMG_1456.JPG';
-const img1613 = '/src/assets/images/IMG_1613.JPG';
-const img1617 = '/src/assets/images/IMG_1617.JPG';
-const img2046 = '/src/assets/images/IMG_2046.JPG';
-const img2274 = '/src/assets/images/IMG_2274.JPG';
-const img2532 = '/src/assets/images/IMG_2532.JPG';
-const pelvisIliac11 = '/src/assets/images/Pelvis-Iliac11_3_fps.jpg';
-const pelvisIliac5 = '/src/assets/images/Pelvis-Iliac5_3_fps.jpg';
+import img1456 from '@/assets/images/IMG_1456.JPG';
+import img1613 from '@/assets/images/IMG_1613.JPG';
+import img1617 from '@/assets/images/IMG_1617.JPG';
+import img2046 from '@/assets/images/IMG_2046.JPG';
+import img2274 from '@/assets/images/IMG_2274.JPG';
+import img2532 from '@/assets/images/IMG_2532.JPG';
+import pelvisIliac11 from '@/assets/images/Pelvis-Iliac11_3_fps.jpg';
+import pelvisIliac5 from '@/assets/images/Pelvis-Iliac5_3_fps.jpg';
 
 export default function ProcedureDetail() {
   const { id } = useParams();

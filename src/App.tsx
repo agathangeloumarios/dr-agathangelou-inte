@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import CookieConsent from './components/CookieConsent';
+import { Toaster } from './components/ui/sonner';
 import Home from './pages/Home';
 import Team from './pages/Team';
 import Procedures from './pages/Procedures';
@@ -36,6 +37,7 @@ function App() {
           </Routes>
         </main>
         <CookieConsent />
+        <Toaster />
       </div>
     </Router>
   );

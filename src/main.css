@@ -6,8 +6,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@config '../tailwind.config.js';
-
 @layer base {
   *,
   ::after,

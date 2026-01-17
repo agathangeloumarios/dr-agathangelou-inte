@@ -253,8 +253,8 @@ export default function Procedures() {
       description: 'Minimally invasive freezing treatment for benign and malignant breast lesions',
       category: 'Women\'s Health',
       icon: <BreastIcon />,
-      duration: '1-2 hours',
-      recovery: '1-2 weeks'
+      duration: '30-60 mins',
+      recovery: '1-2 days'
     },
   ];
 

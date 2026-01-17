@@ -186,8 +186,8 @@ export default function ProcedureDetail() {
       icon: <Heart size={64} weight="duotone" className="text-primary" />,
       category: 'Women\'s Health',
       description: 'Breast cryotherapy uses extreme cold to freeze and destroy abnormal breast tissue, offering a minimally invasive treatment for selected breast lesions.',
-      duration: '1-2 hours',
-      recovery: '1-2 weeks',
+      duration: '30-60 mins',
+      recovery: '1-2 days',
       benefits: [
         'Minimal scarring',
         'Preserves breast appearance',

@@ -49,6 +49,13 @@
   --purple: #a855f7;
   --purple-foreground: #FFFFFF;
   
+  --gradient-1: #FF6B6B;
+  --gradient-2: #4ECDC4;
+  --gradient-3: #45B7D1;
+  --gradient-4: #FFA07A;
+  --gradient-5: #98D8C8;
+  --gradient-6: #F7DC6F;
+  
   --radius: 0.25rem;
 }
 
@@ -75,6 +82,13 @@
   
   --color-purple: var(--purple);
   --color-purple-foreground: var(--purple-foreground);
+  
+  --color-gradient-1: var(--gradient-1);
+  --color-gradient-2: var(--gradient-2);
+  --color-gradient-3: var(--gradient-3);
+  --color-gradient-4: var(--gradient-4);
+  --color-gradient-5: var(--gradient-5);
+  --color-gradient-6: var(--gradient-6);
   
   --radius-sm: calc(var(--radius) * 0.5);
   --radius-md: var(--radius);

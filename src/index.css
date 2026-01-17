@@ -18,8 +18,8 @@
 }
 
 :root {
-  --background: oklch(18.87% 0 0);
-  --foreground: oklch(0.98 0 0);
+  --background: oklch(98.5% 0.008 85);
+  --foreground: oklch(0.15 0 0);
   
   --card: oklch(93.8% 0.127 124.321);
   --card-foreground: oklch(0.15 0 0);
@@ -33,7 +33,7 @@
   --secondary: oklch(85.5% 0.138 181.071);
   --secondary-foreground: oklch(0.15 0 0);
   
-  --muted: oklch(21% 0.034 264.665);
+  --muted: oklch(21% 0.006 285.885);
   --muted-foreground: oklch(0.48 0 0);
   
   --accent: oklch(52.5% 0.223 3.958);

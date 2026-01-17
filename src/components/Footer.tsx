@@ -7,7 +7,7 @@ export default function Footer() {
   const [logoError, setLogoError] = useState(false);
   
   return (
-    <footer className="text-white py-16 px-4" style={{ backgroundColor: '#22232F' }}>
+    <footer className="text-white py-16 px-4" style={{ backgroundColor: '#172435' }}>
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center space-y-6">
           <div className="flex items-center space-x-3">

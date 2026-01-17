@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, Clock, User as UserIcon, Phone, EnvelopeSimple, ChatCircle, CheckCircle, MapPin } from '@phosphor-icons/react';
+import { User as UserIcon, Phone, EnvelopeSimple, ChatCircle, CheckCircle, MapPin, CalendarCheck } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,8 +16,7 @@ export default function BookAppointment() {
     name: '', 
     email: '', 
     phone: '', 
-    date: '', 
-    time: '', 
+    location: '', 
     procedure: '', 
     message: '' 
   });
@@ -47,7 +46,7 @@ export default function BookAppointment() {
       duration: 5000,
     });
     
-    setFormData({ name: '', email: '', phone: '', date: '', time: '', procedure: '', message: '' });
+    setFormData({ name: '', email: '', phone: '', location: '', procedure: '', message: '' });
     setIsSubmitting(false);
   };
 
@@ -69,7 +68,7 @@ export default function BookAppointment() {
       link: 'mailto:agathangeloumarios@gmail.com'
     },
     { 
-      icon: <Clock size={32} weight="duotone" className="text-primary" />, 
+      icon: <CalendarCheck size={32} weight="duotone" className="text-primary" />, 
       title: 'Availability', 
       value: 'Open 24 hours',
       link: null
@@ -204,39 +203,24 @@ export default function BookAppointment() {
                   />
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="date" className="flex items-center gap-2 text-foreground font-semibold">
-                      <Calendar size={18} weight="duotone" className="text-primary" />
-                      Preferred Date *
-                    </Label>
-                    <Input 
-                      id="date"
-                      name="date" 
-                      type="date"
-                      value={formData.date} 
-                      onChange={handleChange} 
-                      required 
-                      className="h-12"
-                      min={new Date().toISOString().split('T')[0]}
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="time" className="flex items-center gap-2 text-foreground font-semibold">
-                      <Clock size={18} weight="duotone" className="text-primary" />
-                      Preferred Time *
-                    </Label>
-                    <Input 
-                      id="time"
-                      name="time" 
-                      type="time"
-                      value={formData.time} 
-                      onChange={handleChange} 
-                      required 
-                      className="h-12"
-                    />
-                  </div>
+                <div className="space-y-2">
+                  <Label htmlFor="location" className="flex items-center gap-2 text-foreground font-semibold">
+                    <MapPin size={18} weight="duotone" className="text-primary" />
+                    Preferred Location *
+                  </Label>
+                  <Select 
+                    value={formData.location} 
+                    onValueChange={(value) => setFormData({ ...formData, location: value })}
+                    required
+                  >
+                    <SelectTrigger className="h-12">
+                      <SelectValue placeholder="Select a location" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="nicosia">Nicosia - Achaion 22, 1101</SelectItem>
+                      <SelectItem value="limassol">Limassol - YGIA POLYCLINIC, 21 Nafpliou St, 3025</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
                 
                 <div className="space-y-2">

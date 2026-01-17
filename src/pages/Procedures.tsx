@@ -214,11 +214,11 @@ export default function Procedures() {
     { 
       id: 4,
       title: 'Minimally Invasive Pain Treatment', 
-      description: 'Advanced pain management procedures including nerve blocks and targeted injections for chronic pain relief',
+      description: 'Advanced pain management procedures including nerve blocks and Ablation techniques for chronic pain relief',
       category: 'Pain Management',
       icon: <NerveIcon />,
-      duration: '30-60 minutes',
-      recovery: '1-3 days'
+      duration: '15-30 minutes',
+      recovery: '1-2 days'
     },
     { 
       id: 5,

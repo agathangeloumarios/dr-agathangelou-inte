@@ -89,9 +89,9 @@ export default function ProcedureDetail() {
       title: 'Minimally Invasive Pain Treatment',
       icon: <Heart size={64} weight="duotone" className="text-primary" />,
       category: 'Pain Management',
-      description: 'Advanced image-guided pain management procedures including nerve blocks, epidural injections, and targeted ablations for chronic pain relief.',
-      duration: '30-60 minutes',
-      recovery: '1-3 days',
+      description: 'Advanced image-guided pain management procedures including nerve blocks and Ablation techniques for chronic pain relief.',
+      duration: '15-30 minutes',
+      recovery: '1-2 days',
       benefits: [
         'Targeted pain relief',
         'Minimal recovery time',

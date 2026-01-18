@@ -72,11 +72,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-gradient-to-br from-background via-white to-primary/5">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        </div>
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-white">
         
         <div className="container mx-auto text-center max-w-5xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-8 tracking-tight leading-tight">
@@ -186,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-br from-background to-muted/30">
+      <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
@@ -215,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-br from-muted/30 to-background">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
@@ -259,7 +255,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">

@@ -262,11 +262,7 @@ export default function Procedures() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-background via-white to-primary/5 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-        </div>
+      <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <Badge className="mb-6 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20">
@@ -293,14 +289,14 @@ export default function Procedures() {
                 key={procedure.id} 
                 className="group relative overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-300 hover:shadow-2xl"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500" />
                 
                 <div className="relative p-8">
                   <Badge className="mb-4 text-xs font-semibold bg-primary/10 text-primary border-primary/20">
                     {procedure.category}
                   </Badge>
                   
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-[#f59e0c]/30 transition-all duration-500 ease-out group-hover:from-[#f59e0c]/30 group-hover:to-[#f59e0c]/20 group-hover:text-[#f59e0c]">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-[#f59e0c]/30 transition-all duration-500 ease-out group-hover:bg-[#f59e0c]/20 group-hover:text-[#f59e0c]">
                     <div className="group-hover:animate-pulse">
                       {procedure.icon}
                     </div>

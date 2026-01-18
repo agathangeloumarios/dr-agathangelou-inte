@@ -90,11 +90,7 @@ export default function Testimonials() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-background via-white to-primary/5 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-        </div>
+      <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <Badge className="mb-6 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20">
@@ -115,7 +111,7 @@ export default function Testimonials() {
 
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <Card className="p-12 mb-16 bg-gradient-to-br from-primary/10 via-primary/5 to-accent/10 border-2 border-primary/20 shadow-xl">
+          <Card className="p-12 mb-16 bg-white border-2 border-primary/20 shadow-xl">
             <div className="text-center">
               <div className="flex justify-center mb-6">
                 {[...Array(5)].map((_, i) => (

@@ -224,7 +224,7 @@ export default function ProcedureDetail() {
 
   return (
     <div className="min-h-screen">
-      <section className="pt-32 pb-12 px-4 bg-gradient-to-br from-background via-white to-primary/5">
+      <section className="pt-32 pb-12 px-4 bg-white">
         <div className="container mx-auto max-w-5xl">
           <Link to="/procedures">
             <Button variant="ghost" className="mb-8 text-primary hover:text-primary hover:bg-primary/10">
@@ -234,7 +234,7 @@ export default function ProcedureDetail() {
           </Link>
           
           <div className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
               {procedure.icon}
             </div>
             

@@ -60,11 +60,7 @@ export default function Benefits() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-background via-white to-primary/5 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-        </div>
+      <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <Badge className="mb-6 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20">
@@ -91,10 +87,10 @@ export default function Benefits() {
                 key={index} 
                 className="group relative overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-300 hover:shadow-2xl"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500" />
                 
                 <div className="relative p-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     {benefit.icon}
                   </div>
                   
@@ -121,7 +117,7 @@ export default function Benefits() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -148,7 +144,7 @@ export default function Benefits() {
                 </div>
               </div>
               
-              <div className="p-8 bg-gradient-to-br from-primary/5 to-accent/5">
+              <div className="p-8 bg-white">
                 <h3 className="text-2xl font-bold text-primary mb-6 text-center">Interventional Radiology</h3>
                 <div className="space-y-4">
                   {comparisons.map((item, index) => (
@@ -164,7 +160,7 @@ export default function Benefits() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">

@@ -41,11 +41,7 @@ export default function Team() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-background via-white to-primary/5 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-        </div>
+      <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <Badge className="mb-6 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-primary/20">
@@ -69,7 +65,7 @@ export default function Team() {
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-2">
               <Card className="overflow-hidden border-2 border-primary/20 shadow-xl">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10 overflow-hidden relative">
+                <div className="aspect-square bg-muted/10 overflow-hidden relative">
                   <img 
                     src={drPhoto2} 
                     alt="Dr Agathangelou Marios" 
@@ -78,7 +74,7 @@ export default function Team() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
                 
-                <div className="p-8 bg-gradient-to-br from-white to-muted/20">
+                <div className="p-8 bg-white">
                   <h2 className="text-3xl font-bold text-foreground mb-2">
                     Dr Agathangelou Marios
                   </h2>
@@ -159,7 +155,7 @@ export default function Team() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Areas of Expertise</h3>
@@ -198,7 +194,7 @@ export default function Team() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">Medical Philosophy</h3>
@@ -209,7 +205,7 @@ export default function Team() {
           
           <div className="grid md:grid-cols-2 gap-6">
             {philosophy.map((item, index) => (
-              <Card key={index} className="p-8 border-2 border-border hover:border-primary/20 transition-all hover:shadow-xl bg-gradient-to-br from-white to-muted/20">
+              <Card key={index} className="p-8 border-2 border-border hover:border-primary/20 transition-all hover:shadow-xl bg-white">
                 <h4 className="text-xl font-bold text-foreground mb-3">{item.title}</h4>
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </Card>
@@ -218,7 +214,7 @@ export default function Team() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Ready to Begin Your Treatment Journey?

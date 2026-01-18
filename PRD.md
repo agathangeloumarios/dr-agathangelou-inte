@@ -79,19 +79,20 @@ A professional single-page website for Dr. Agathangelou Marios, an Interventiona
 The design should evoke cutting-edge medical precision, trustworthiness, and calm professionalism. Clean lines, generous white space, and a sophisticated color palette create an atmosphere of modern healthcare excellence. Subtle animations suggest advanced technology while maintaining the gravitas appropriate for medical services.
 
 ## Color Selection
-Professional medical palette with teal primary, warm accent colors, and high-contrast neutrals using hex codes.
+Ocean-inspired medical palette with vibrant cyan and teal tones, deep navy accents, and warm brown contrast. Colors inspired by natural aquatic tones conveying clarity, precision, and tranquility.
 
-- **Primary Color**: Teal (#0d9488) - Medical professionalism, trust, precision, innovation
+- **Primary Color**: Deep Teal (oklch(0.45 0.12 210) / #052A3D) - Medical authority, deep trust, professional precision
 - **Secondary Colors**: 
-  - Mint Green (#8DD3BB) - Supporting color for secondary actions
-  - Purple (#a855f7) - Innovation, specialization highlights
-- **Accent Color**: Warm Amber (#f59e0c) - Call-to-action buttons, important highlights
-- **Navigation/Footer**: Dark Navy (#172435) - Professional header and footer backgrounds
+  - Bright Cyan (oklch(0.60 0.10 200) / #117192) - Innovation, clarity, supporting actions
+  - Vibrant Aqua (#19D1E6) - Fresh, modern, attention-drawing elements
+- **Accent Color**: Warm Aqua (oklch(0.70 0.15 195) / #19D1E6) - Call-to-action highlights, interactive elements, energy
+- **Supporting Color**: Warm Brown (#614943) - Grounding element, subtle contrast, organic warmth
+- **Light Accent**: Soft Blue-Gray (#B3CDD7) - Muted backgrounds, cards, subtle surfaces
 - **Foreground/Background Pairings**: 
-  - Background Warm White (#FCFBF8): Dark Gray text (#262626) - Ratio 13.8:1 ✓
-  - Teal Primary (#0d9488): White text (#FFFFFF) - Ratio 4.6:1 ✓
-  - Amber Accent (#f59e0c): White text (#FFFFFF) - Ratio 5.8:1 ✓
-  - Dark Navy (#172435): White text (#FFFFFF) - Ratio 13.2:1 ✓
+  - Background Light (oklch(0.97 0.01 200)): Dark Blue text (oklch(0.20 0.05 210)) - Ratio 12.5:1 ✓
+  - Primary Deep Teal (#052A3D): White text (#FFFFFF) - Ratio 14.8:1 ✓
+  - Accent Bright Cyan (#19D1E6): Dark text (#052A3D) - Ratio 8.2:1 ✓
+  - Secondary Teal (#117192): White text (#FFFFFF) - Ratio 5.1:1 ✓
 
 ## Font Selection
 Typography should convey modern medical authority with excellent readability. Primary typeface is clean and contemporary for professional credibility; headings are bold and commanding to establish hierarchy.

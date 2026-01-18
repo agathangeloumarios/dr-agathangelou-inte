@@ -36,7 +36,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#172435' }}>
+      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#0D2845' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link to="/" className="flex items-center space-x-3 group">
@@ -97,7 +97,7 @@ export default function Navigation() {
             className="absolute inset-0 bg-black/40 backdrop-blur-sm animate-fade-in"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="absolute top-20 left-0 right-0 shadow-2xl animate-fade-in-up" style={{ backgroundColor: '#172435' }}>
+          <div className="absolute top-20 left-0 right-0 shadow-2xl animate-fade-in-up" style={{ backgroundColor: '#0D2845' }}>
             <div className="container mx-auto px-4 py-6 space-y-2">
               {navItems.map((item) => (
                 <Link 

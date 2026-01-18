@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 
 export default function Testimonials() {
   const testimonials = [
@@ -90,6 +91,12 @@ export default function Testimonials() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Patient Testimonials | Dr. Agathangelou Reviews Cyprus"
+        description="Read real patient experiences and reviews for Dr. Agathangelou Marios. 100% satisfaction rate, 5-star reviews for interventional radiology treatment in Cyprus."
+        keywords="Dr Agathangelou reviews, patient testimonials Cyprus, interventional radiology reviews, fibroid treatment reviews, medical testimonials Nicosia"
+        canonical="https://www.dragathangelou.com/testimonials"
+      />
       <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">

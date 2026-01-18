@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 
 const UterusIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -262,6 +263,12 @@ export default function Procedures() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Minimally Invasive Procedures | Fibroid Embolization, Varicose Veins Cyprus"
+        description="Comprehensive interventional radiology procedures in Cyprus: uterine fibroid embolization, varicose vein treatment, pain management, tumor ablation. Minimally invasive, faster recovery."
+        keywords="interventional radiology procedures Cyprus, fibroid embolization Cyprus, varicose vein treatment, minimally invasive surgery, tumor ablation, pain management Cyprus, thyroid ablation"
+        canonical="https://www.dragathangelou.com/procedures"
+      />
       <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">

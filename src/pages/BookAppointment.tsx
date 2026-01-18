@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { toast } from 'sonner';
 import Footer from '@/components/Footer';
 import GoogleMap from '@/components/GoogleMap';
+import { SEO } from '@/components/SEO';
 
 export default function BookAppointment() {
   const [formData, setFormData] = useState({ 
@@ -83,6 +84,12 @@ export default function BookAppointment() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Book Appointment | Dr. Agathangelou Marios Nicosia & Limassol Cyprus"
+        description="Schedule your consultation with Dr. Agathangelou Marios in Nicosia or Limassol, Cyprus. Available 24 hours. Expert interventional radiology care."
+        keywords="book appointment Cyprus, interventional radiologist appointment, consultation Nicosia, medical appointment Limassol, schedule procedure Cyprus"
+        canonical="https://www.dragathangelou.com/book-appointment"
+      />
       <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">

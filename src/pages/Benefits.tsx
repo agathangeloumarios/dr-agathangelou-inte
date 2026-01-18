@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PhotoGallery from '@/components/PhotoGallery';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
 import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
 import operatingTheater3 from '@/assets/images/modern_operation_theater_3.jpeg';
@@ -60,6 +61,12 @@ export default function Benefits() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Benefits of Interventional Radiology | Minimally Invasive Treatment Cyprus"
+        description="Discover the advantages of minimally invasive interventional radiology: less pain, faster recovery, outpatient treatment, precision technology, lower risk. Expert care in Cyprus."
+        keywords="minimally invasive benefits, interventional radiology advantages, faster recovery Cyprus, outpatient procedures, less pain surgery, precision medical treatment"
+        canonical="https://www.dragathangelou.com/benefits"
+      />
       <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">

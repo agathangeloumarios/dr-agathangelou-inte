@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import PhotoGallery from '@/components/PhotoGallery';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 import drPhoto1 from '@/assets/images/dr_Agathangelou.jpg';
 import drPhoto2 from '@/assets/images/dr_agathangelou_1.png';
 import drPhoto3 from '@/assets/images/dr_agathangelou_2.jpeg';
@@ -41,6 +42,12 @@ export default function Team() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Dr. Agathangelou Marios MD MSc | Interventional Radiologist Cyprus"
+        description="Meet Dr. Agathangelou Marios MD MSc - Board-certified interventional radiologist with 12+ years experience and 4500+ successful procedures in Cyprus. Expert in minimally invasive techniques."
+        keywords="Dr Agathangelou Marios, interventional radiologist Cyprus, medical credentials Cyprus, board certified radiologist, Nicosia doctor, Limassol specialist"
+        canonical="https://www.dragathangelou.com/team"
+      />
       <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">

@@ -3,6 +3,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 
 export default function PrivacyPolicy() {
   const sections = [
@@ -72,6 +73,12 @@ export default function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Privacy Policy | Dr. Agathangelou Marios Interventional Radiology"
+        description="Privacy policy and data protection information for Dr. Agathangelou Marios medical practice. GDPR compliant, secure patient data handling."
+        keywords="privacy policy, data protection, GDPR compliance, medical privacy, patient confidentiality"
+        canonical="https://www.dragathangelou.com/privacy-policy"
+      />
       <section className="relative pt-32 pb-20 px-4 bg-white overflow-hidden">
         
         <div className="container mx-auto max-w-5xl text-center relative z-10">

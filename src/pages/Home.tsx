@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import PhotoGallery from '@/components/PhotoGallery';
 import GoogleMap from '@/components/GoogleMap';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 import drPhoto from '@/assets/images/dr_agathangelou_2.jpeg';
 import operatingTheater1 from '@/assets/images/modern_operation_theater_1.jpg';
 import operatingTheater2 from '@/assets/images/modern_operation_theater_2.jpg';
@@ -72,6 +73,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Dr. Agathangelou Marios - Interventional Radiologist in Cyprus | Minimally Invasive Treatment"
+        description="Dr. Agathangelou Marios MD MSc - Expert interventional radiologist in Nicosia & Limassol, Cyprus. Specializing in minimally invasive procedures: fibroid embolization, varicose vein treatment, pain management. 12+ years experience, 4500+ procedures."
+        keywords="interventional radiologist Cyprus, minimally invasive surgery Cyprus, fibroid treatment Nicosia, varicose veins Cyprus, Dr Agathangelou Marios, interventional radiology Limassol, pain management Cyprus, embolization Cyprus"
+        canonical="https://www.dragathangelou.com/"
+      />
       <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-white">
         
         <div className="container mx-auto text-center max-w-5xl relative z-10">

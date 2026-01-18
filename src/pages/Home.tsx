@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pulse, Heart, Shield, Clock as ClockIcon, Sparkle, FacebookLogo, InstagramLogo, LinkedinLogo, WhatsappLogo } from '@phosphor-icons/react';
+import { Star, Phone, EnvelopeSimple, MapPin, Clock, ArrowRight, CheckCircle, Pulse, Heart, Shield, Clock as ClockIcon, Sparkle, FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -439,16 +439,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <a 
-        href="https://wa.me/35796973434"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-[#25D366]/50 group"
-        aria-label="Contact us on WhatsApp"
-      >
-        <WhatsappLogo size={32} weight="fill" className="text-white group-hover:scale-110 transition-transform" />
-      </a>
 
       <Footer />
     </div>

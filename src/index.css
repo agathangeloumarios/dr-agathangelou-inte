@@ -18,36 +18,36 @@
 }
 
 :root {
-  --background: oklch(30.2% 0.056 229.695);
-  --foreground: oklch(41.52% 0.048 33.39);
+  --background: oklch(0.823 0.020 220.5);
+  --foreground: oklch(0.414 0.046 33.0);
   
   --card: oklch(0.99 0.005 200);
-  --card-foreground: oklch(41.52% 0.048 33.39);
+  --card-foreground: oklch(0.414 0.046 33.0);
   
   --popover: oklch(0.99 0.005 200);
-  --popover-foreground: oklch(41.52% 0.048 33.39);
+  --popover-foreground: oklch(0.414 0.046 33.0);
   
-  --primary: oklch(30.2% 0.056 229.695);
-  --primary-foreground: oklch(87.65% 0.076 68.74);
+  --primary: oklch(0.476 0.084 233.5);
+  --primary-foreground: oklch(0.876 0.056 68.0);
   
-  --secondary: oklch(80.02% 0.098 215.05);
-  --secondary-foreground: oklch(55.11% 0.056 47.63);
+  --secondary: oklch(0.828 0.089 212.0);
+  --secondary-foreground: oklch(0.414 0.046 33.0);
   
-  --muted: oklch(30.2% 0.056 229.695);
-  --muted-foreground: oklch(55.11% 0.056 47.63);
+  --muted: oklch(0.823 0.020 220.5);
+  --muted-foreground: oklch(0.648 0.043 46.0);
   
-  --accent: oklch(30.2% 0.056 229.695);
-  --accent-foreground: oklch(87.65% 0.076 68.74);
+  --accent: oklch(0.218 0.050 235.0);
+  --accent-foreground: oklch(0.876 0.056 68.0);
   
   --destructive: oklch(0.55 0.20 30);
   --destructive-foreground: oklch(0.99 0.01 200);
   
-  --border: oklch(84.48% 0.025 213.71);
-  --input: oklch(84.48% 0.025 213.71);
-  --ring: oklch(47.86% 0.088 228.08);
+  --border: oklch(0.823 0.020 220.5);
+  --input: oklch(0.823 0.020 220.5);
+  --ring: oklch(0.476 0.084 233.5);
   
-  --teal: oklch(80.02% 0.098 215.05);
-  --teal-foreground: oklch(55.11% 0.056 47.63);
+  --teal: oklch(0.828 0.089 212.0);
+  --teal-foreground: oklch(0.414 0.046 33.0);
   
   --gradient-1: #19D1E6;
   --gradient-1-dark: #052A3D;
@@ -56,6 +56,11 @@
   --gradient-4: #B3CDD7;
   --gradient-5: #19D1E6;
   --gradient-6: #052A3D;
+  
+  --base: oklch(0.823 0.020 220.5);
+  --base-text: oklch(0.414 0.046 33.0);
+  --primary-text: oklch(0.876 0.056 68.0);
+  --secondary-text: oklch(0.648 0.043 46.0);
   
   --radius: 0.25rem;
   
@@ -135,6 +140,11 @@
   --color-gradient-4: var(--gradient-4);
   --color-gradient-5: var(--gradient-5);
   --color-gradient-6: var(--gradient-6);
+  
+  --color-base: var(--base);
+  --color-base-text: var(--base-text);
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
   
   --radius-sm: calc(var(--radius) * 0.5);
   --radius-md: var(--radius);

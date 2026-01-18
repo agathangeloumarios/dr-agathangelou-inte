@@ -106,7 +106,7 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#what-is">
-              <Button size="lg" className="bg-primary hover:bg-[#a855f7] text-primary-foreground hover:text-white font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <Button size="lg" className="bg-primary hover:bg-[#B69270] text-primary-foreground hover:text-white font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 Learn More
                 <ArrowRight size={20} className="ml-2" weight="bold" />
               </Button>

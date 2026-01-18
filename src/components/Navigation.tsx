@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { List, X, Pulse } from '@phosphor-icons/react';
+import { List, X, Pulse, FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import logo from '@/assets/images/logo.png';
 
@@ -78,6 +78,35 @@ export default function Navigation() {
                   BOOK APPOINTMENT
                 </Button>
               </Link>
+              <div className="flex items-center gap-2 ml-4 pl-4 border-l border-white/20">
+                <a 
+                  href="https://www.facebook.com/dragathangelou" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 bg-white/10 hover:bg-[#1877F2] rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  aria-label="Facebook"
+                >
+                  <FacebookLogo size={18} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/dr_agathangelou/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 bg-white/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  aria-label="Instagram"
+                >
+                  <InstagramLogo size={18} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/marios-agathangelou/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 bg-white/10 hover:bg-[#0A66C2] rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinLogo size={18} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
+                </a>
+              </div>
             </div>
             
             <button 
@@ -118,6 +147,35 @@ export default function Navigation() {
                   BOOK APPOINTMENT
                 </Button>
               </Link>
+              <div className="flex items-center justify-center gap-3 mt-6 pt-4 border-t border-white/20">
+                <a 
+                  href="https://www.facebook.com/dragathangelou" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 bg-white/10 hover:bg-[#1877F2] rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  aria-label="Facebook"
+                >
+                  <FacebookLogo size={22} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/dr_agathangelou/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 bg-white/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FD1D1D] rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  aria-label="Instagram"
+                >
+                  <InstagramLogo size={22} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/marios-agathangelou/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 bg-white/10 hover:bg-[#0A66C2] rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinLogo size={22} weight="fill" className="text-gray-300 group-hover:text-white transition-colors" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

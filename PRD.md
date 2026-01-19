@@ -1,140 +1,159 @@
 # Planning Guide
 
-A professional single-page website for Dr. Agathangelou Marios, an Interventional Radiologist, showcasing expertise in minimally invasive techniques with clean navigation, comprehensive service information, and appointment booking functionality.
+A comprehensive medical website for Dr. Agathangelou Marios, an interventional radiologist in Cyprus, showcasing his expertise in minimally invasive procedures and providing patients with information, testimonials, and appointment booking capabilities.
 
-**Experience Qualities**: 
-1. **Trustworthy** - Medical professionalism with authoritative content that instills confidence in prospective patients
-2. **Accessible** - Clear navigation and information hierarchy making complex medical procedures understandable
-3. **Modern** - Contemporary design reflecting cutting-edge medical innovation and precision techniques
+**Experience Qualities**:
+1. **Professional** - Conveys medical expertise and trustworthiness through clean design and authoritative content
+2. **Reassuring** - Creates comfort for patients through warm imagery, testimonials, and clear explanations of procedures
+3. **Accessible** - Makes complex medical information easy to understand with clear navigation and mobile-friendly design
 
-**Complexity Level**: Light Application (multiple features with basic state)
-- The site functions as an informational showcase with interactive elements including smooth scrolling navigation, expandable procedure details, a booking form with validation, and testimonial displays. State management handles navigation highlighting, modal dialogs for procedures and booking, and form submissions.
+**Complexity Level**: Complex Application (advanced functionality, likely with multiple views)
+This is a multi-page medical marketing and informational website with appointment booking, photo galleries, Google Maps integration, testimonials, detailed procedure pages, cookie consent, privacy policy, and SEO optimization.
 
 ## Essential Features
 
-### Smooth Scroll Navigation
-- **Functionality**: Fixed header with navigation links that smoothly scroll to page sections
-- **Purpose**: Provides intuitive single-page navigation with visual feedback of current section
-- **Trigger**: User clicks navigation items or logo
-- **Progression**: Click nav item → Smooth scroll animation → Section appears → Nav highlight updates
-- **Success criteria**: Scrolling is buttery smooth, active section is highlighted, header remains accessible
+### Navigation & Routing
+- **Functionality**: Multi-page navigation with responsive mobile menu
+- **Purpose**: Allows users to explore different sections of the website seamlessly
+- **Trigger**: User clicks navigation links or menu icon
+- **Progression**: Click navigation item → Route changes → Page content loads → Smooth scroll to top
+- **Success criteria**: All pages accessible, mobile menu works, active states show current page
 
-### Hero Section with Call-to-Action
-- **Functionality**: Prominent introduction with doctor credentials and primary CTAs
-- **Purpose**: Immediate professional credibility and clear action paths for visitors
-- **Trigger**: Page load
-- **Progression**: Page loads → Hero displays → User sees credentials/CTAs → Clicks Learn More or Book
-- **Success criteria**: Doctor name, credentials, and specialization clearly visible; CTAs are prominent
+### Hero Section with CTA
+- **Functionality**: Large hero banner with doctor information and appointment booking
+- **Purpose**: Immediately communicate value proposition and encourage appointment booking
+- **Trigger**: Page load on home page
+- **Progression**: User views hero → Reads credentials/benefits → Clicks "Book Appointment" → Navigates to booking form
+- **Success criteria**: Hero displays properly, CTA button prominent, responsive on all devices
 
-### Procedures Overview with Detail Modals
-- **Functionality**: Grid display of 9 procedures with expandable detail views
-- **Purpose**: Showcase treatment offerings without overwhelming the single page
-- **Trigger**: User clicks "Learn More" on procedure card
-- **Progression**: Browse grid → Click procedure → Modal opens with details → Read content → Close modal
-- **Success criteria**: All 9 procedures visible, modals open smoothly, content is comprehensive
+### Procedures Showcase
+- **Functionality**: Display available procedures with detailed information pages
+- **Purpose**: Educate patients about available treatments
+- **Trigger**: User navigates to procedures page or clicks procedure cards
+- **Progression**: Browse procedures → Click to learn more → Read detailed information → View before/after galleries → Book appointment
+- **Success criteria**: All procedures listed, detail pages functional, images display properly
 
-### Benefits Section
-- **Functionality**: Visual presentation of interventional radiology advantages
-- **Purpose**: Educate visitors on treatment methodology benefits
-- **Trigger**: User scrolls to benefits section
-- **Progression**: Scroll into view → Benefits appear with icons → User reads advantages
-- **Success criteria**: Clear benefit statements with supporting visuals
+### Testimonials & Reviews
+- **Functionality**: Display patient testimonials with ratings and Google reviews integration
+- **Purpose**: Build trust through social proof
+- **Trigger**: User navigates to testimonials page or views testimonials section
+- **Progression**: View testimonials → Read patient experiences → See ratings → Gain confidence → Book appointment
+- **Success criteria**: Testimonials display with proper formatting, ratings visible, responsive layout
 
-### Team Section
-- **Functionality**: Doctor profile with photo, credentials, and expertise
-- **Purpose**: Build trust through professional presentation
-- **Trigger**: User navigates to team section
-- **Progression**: Navigate → Profile displays → User reviews credentials
-- **Success criteria**: Professional photo, full credentials, specialization details visible
+### Appointment Booking
+- **Functionality**: Form for booking appointments with validation
+- **Purpose**: Convert visitors into patients by making booking easy
+- **Trigger**: User clicks "Book Appointment" button
+- **Progression**: Fill out form → Select procedure → Provide contact details → Submit → Receive confirmation
+- **Success criteria**: Form validates input, submits successfully, user receives feedback
 
-### Testimonials Display
-- **Functionality**: Patient review carousel or grid
-- **Purpose**: Social proof through satisfied patient experiences
-- **Trigger**: User scrolls to testimonials section
-- **Progression**: Scroll into view → Reviews display → User reads testimonials
-- **Success criteria**: Multiple testimonials visible, 5-star rating system shown
+### Photo Galleries
+- **Functionality**: Before/after galleries and facility images
+- **Purpose**: Showcase results and build credibility
+- **Trigger**: User views procedure detail pages or photo gallery components
+- **Progression**: View thumbnail → Click to expand → Navigate through images → Close gallery
+- **Success criteria**: Images load properly, galleries interactive, responsive on mobile
 
-### Appointment Booking Form
-- **Functionality**: Modal form with validation for appointment requests
-- **Purpose**: Convert visitors into patients through easy scheduling
-- **Trigger**: User clicks "Book an Appointment" CTA
-- **Progression**: Click CTA → Modal opens → Fill form fields → Validate → Submit → Confirmation
-- **Success criteria**: Form validates inputs, provides feedback, confirms submission
+### Google Maps Integration
+- **Functionality**: Interactive maps showing clinic locations
+- **Purpose**: Help patients find clinic locations in Nicosia and Limassol
+- **Trigger**: User scrolls to contact/location section
+- **Progression**: View map → Interact with markers → Get directions
+- **Success criteria**: Maps load correctly, markers show both locations, mobile-friendly
 
-### Contact Information Display
-- **Functionality**: Address, phone, email, and hours prominently displayed
-- **Purpose**: Provide multiple contact methods for patient inquiries
-- **Trigger**: User scrolls to contact section
-- **Progression**: Scroll to footer → Contact info displays → User copies/clicks contact method
-- **Success criteria**: All contact details visible, phone/email are clickable
+### SEO Optimization
+- **Functionality**: Comprehensive meta tags, structured data, and OpenGraph tags
+- **Purpose**: Improve search engine visibility and social sharing
+- **Trigger**: Page loads
+- **Progression**: Search engine crawls → Reads metadata → Indexes properly → Displays in search results
+- **Success criteria**: All meta tags present, structured data valid, social previews work
 
 ## Edge Case Handling
-- **Empty Form Submission**: Inline validation prevents submission and highlights required fields
-- **Invalid Email Format**: Real-time email validation with error message
-- **Mobile Navigation**: Hamburger menu for small screens with full-screen overlay
-- **Long Procedure Content**: Scrollable modal content with clear close affordances
-- **Slow Network**: Progressive content loading with skeleton states
+
+- **Missing Images**: Fallback icons display when images fail to load using onError handlers
+- **Network Failures**: Toast notifications inform users of submission errors with retry options
+- **Invalid Form Data**: Real-time validation prevents submission of incomplete or malformed data
+- **Mobile Navigation**: Menu closes automatically on route change to prevent navigation confusion
+- **Scroll Restoration**: Pages scroll to top on navigation to ensure proper content viewing
+- **Cookie Consent**: Persistent storage prevents repeated consent requests
 
 ## Design Direction
-The design should evoke cutting-edge medical precision, trustworthiness, and calm professionalism. Clean lines, generous white space, and a sophisticated color palette create an atmosphere of modern healthcare excellence. Subtle animations suggest advanced technology while maintaining the gravitas appropriate for medical services.
+
+The design should evoke medical professionalism, trustworthiness, and calm reassurance. It combines clinical precision with warmth and approachability, using teal/blue tones associated with healthcare, clean layouts that suggest organization and competence, and generous whitespace that creates a sense of calm.
 
 ## Color Selection
-Ocean-inspired medical palette with vibrant cyan and teal tones, deep navy accents, and warm brown contrast. Colors inspired by natural aquatic tones conveying clarity, precision, and tranquility.
 
-- **Primary Color**: Deep Teal (oklch(0.45 0.12 210) / #052A3D) - Medical authority, deep trust, professional precision
-- **Secondary Colors**: 
-  - Bright Cyan (oklch(0.60 0.10 200) / #117192) - Innovation, clarity, supporting actions
-  - Vibrant Aqua (#19D1E6) - Fresh, modern, attention-drawing elements
-- **Accent Color**: Warm Aqua (oklch(0.70 0.15 195) / #19D1E6) - Call-to-action highlights, interactive elements, energy
-- **Supporting Color**: Warm Brown (#614943) - Grounding element, subtle contrast, organic warmth
-- **Light Accent**: Soft Blue-Gray (#B3CDD7) - Muted backgrounds, cards, subtle surfaces
-- **Foreground/Background Pairings**: 
-  - Background Light (oklch(0.97 0.01 200)): Dark Blue text (oklch(0.20 0.05 210)) - Ratio 12.5:1 ✓
-  - Primary Deep Teal (#052A3D): White text (#FFFFFF) - Ratio 14.8:1 ✓
-  - Accent Bright Cyan (#19D1E6): Dark text (#052A3D) - Ratio 8.2:1 ✓
-  - Secondary Teal (#117192): White text (#FFFFFF) - Ratio 5.1:1 ✓
+Medical-inspired color palette with teal and blue as primary colors, complemented by soft gradients and clean neutrals.
+
+- **Primary Color**: Teal `oklch(0.58 0.12 195)` - Medical professionalism and trust, used for primary actions and brand elements
+- **Secondary Colors**: Blue `oklch(60.9% 0.126 221.723)` and Light Blue `oklch(71.5% 0.143 215.221)` - Supporting medical colors for hierarchy and variety
+- **Accent Color**: Soft Orange `oklch(0.68 0.18 35)` - Warm, approachable highlight for CTAs and important elements
+- **Foreground/Background Pairings**:
+  - Primary Teal (oklch(0.58 0.12 195)): White text (oklch(0.99 0.01 200)) - Ratio 6.2:1 ✓
+  - Background (oklch(0.97 0.01 200)): Dark Blue text (oklch(39.8% 0.07 227.392)) - Ratio 8.9:1 ✓
+  - Accent Orange (oklch(0.68 0.18 35)): White text (oklch(0.99 0.01 200)) - Ratio 4.9:1 ✓
+  - Navy Header (#0D2845): White text (#FFFFFF) - Ratio 12.1:1 ✓
 
 ## Font Selection
-Typography should convey modern medical authority with excellent readability. Primary typeface is clean and contemporary for professional credibility; headings are bold and commanding to establish hierarchy.
 
-- **Typographic Hierarchy**: 
-  - H1 (Hero Title): Inter Bold / 56px / -0.02em / Leading 1.1
-  - H2 (Section Headers): Inter SemiBold / 36px / -0.01em / Leading 1.2
-  - H3 (Subsections): Inter SemiBold / 24px / Normal / Leading 1.3
-  - Body (General Content): Inter Regular / 16px / Normal / Leading 1.6
-  - Small (Captions): Inter Regular / 14px / Normal / Leading 1.5
-  - Button Text: Inter Medium / 16px / Normal / Leading 1
+Typography should balance medical authority with readability, using clean sans-serif for clarity and subtle serif accents for warmth.
+
+- **Typographic Hierarchy**:
+  - H1 (Hero Titles): Inter Bold/48px/tight letter-spacing for maximum impact
+  - H2 (Section Headers): Inter Bold/36px/normal spacing for clear hierarchy
+  - H3 (Card Titles): Inter SemiBold/24px/normal spacing for subsections
+  - Body Text: Inter Regular/16px/1.5 line-height for comfortable reading
+  - Accent Text: Lora Italic/18px for testimonials and emphasis
+  - Technical Info: JetBrains Mono Regular/14px for medical codes and data
 
 ## Animations
-Animations enhance the sense of precision and modernity without distracting from medical content. Smooth scroll behavior creates seamless navigation. Subtle fade-ins as sections enter viewport add polish. Procedure cards have gentle hover elevations suggesting interactivity. Modal transitions are quick and purposeful. All animations respect reduced-motion preferences.
+
+Animations are used purposefully to guide attention and provide feedback without overwhelming the medical context. Subtle fade-in-up animations introduce content sections as users scroll, creating a sense of progressive revelation. Button hover states include gentle scale transforms (1.02x) to confirm interactivity. Page transitions are smooth but quick (300ms) to maintain efficiency. The mobile menu slides in with a backdrop blur for professional polish.
 
 ## Component Selection
+
 - **Components**: 
-  - Dialog (Shadcn) - For procedure details and booking form modals
-  - Card (Shadcn) - Procedure cards with custom hover states
-  - Button (Shadcn) - CTAs with teal primary and amber accent variants
-  - Input, Textarea, Label (Shadcn) - Booking form fields with validation
-  - Badge (Shadcn) - Procedure categories and doctor credentials
-  - Separator (Shadcn) - Section dividers
+  - Navigation: Custom responsive nav with mobile drawer using Sheet component
+  - Hero: Custom full-width hero with Badge, Button (primary CTA)
+  - Procedures: Card components with hover effects, AspectRatio for images
+  - Testimonials: Card with Avatar, rating stars using custom SVG
+  - Forms: Input, Textarea, Select from shadcn with react-hook-form integration
+  - Galleries: Custom PhotoGallery and BeforeAfterGallery components
+  - Maps: Custom GoogleMap wrapper component
+  - Notifications: Sonner toast for form submissions
+  - Cookie Banner: Custom CookieConsent with persistent storage
+  - Footer: Custom footer with social links
+
 - **Customizations**: 
-  - Custom logo component with medical cross and typography
-  - Procedure card grid with stagger animation on scroll
-  - Fixed header with scroll-triggered background blur
-  - Smooth scroll behavior via CSS scroll-behavior and intersection observer
+  - Custom PhotoGallery with lightbox functionality
+  - BeforeAfterGallery with slider interaction
+  - GoogleMap with custom markers for multiple locations
+  - SEO component for dynamic meta tag management
+  - Navigation with sticky behavior and scroll detection
+
 - **States**: 
-  - Buttons: Default (solid), Hover (slight lift + brightness), Active (press down), Focus (ring), Disabled (reduced opacity)
-  - Inputs: Default (light border), Focus (teal ring), Error (red border + message), Success (green checkmark)
-  - Nav Links: Default (gray), Active (teal + underline), Hover (teal transition)
+  - Buttons: Subtle scale on hover, pressed state with darker shade, disabled with opacity
+  - Inputs: Focus state with ring color, error state with red border and message
+  - Cards: Gentle elevation increase on hover, shadow expansion
+  - Navigation: Active link underline, mobile menu slide-in animation
+
 - **Icon Selection**: 
-  - Phosphor icons throughout: Activity (procedures), Heart (benefits), Users (team), ChatCircle (testimonials), Phone/Envelope/MapPin (contact), Calendar (booking), X (close modals)
+  - Phosphor Icons (duotone weight) for visual interest
+  - Medical: Pulse, Heart for health-related elements
+  - Actions: Phone, Envelope, MapPin for contact
+  - Features: CheckCircle, Shield, Clock for benefits
+  - Social: FacebookLogo, InstagramLogo, LinkedinLogo for social links
+
 - **Spacing**: 
-  - Section padding: py-20 (mobile) / py-32 (desktop)
-  - Content max-width: max-w-7xl mx-auto
-  - Card gaps: gap-8 for grid layouts
-  - Inline spacing: space-x-4 for button groups
+  - Container padding: px-4 mobile, px-8 desktop
+  - Section spacing: py-16 mobile, py-24 desktop
+  - Card padding: p-6 for content cards
+  - Grid gaps: gap-6 for card grids
+  - Button padding: px-6 py-3 for primary actions
+
 - **Mobile**: 
-  - Header: Hamburger menu with slide-in full-screen navigation
-  - Hero: Stacked layout, reduced font sizes (H1 to 40px)
-  - Procedure grid: 1 column on mobile, 2 on tablet, 3 on desktop
-  - Form: Full-width inputs with comfortable touch targets (min 44px)
-  - Contact: Stacked contact cards instead of grid
+  - Hamburger menu replaces desktop navigation at 768px breakpoint
+  - Card grids collapse from 3-column to 2-column to 1-column
+  - Hero text sizes reduce proportionally (48px → 32px)
+  - Maps become full-width with adjusted height
+  - Footer social links remain horizontal with smaller spacing
